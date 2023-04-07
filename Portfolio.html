@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" contenteditable="false">
+         <head>
+                  <title>My Portfolio</title>
+                  <!--Character set Used-->
+                  <meta charset="UTF-8">
+                  <!--Local Bootstrap-->
+                  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+                  <!--Universal Bootstrap-->
+                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+                   integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+                  <!--Description of the webpage-->
+                  <meta name="description" content="">
+                  <!--Author of a Page-->
+                  <meta name="author" content="Akanji Abayomi Hussein">
+                  <!--Keywords for search engine(S.E.O)-->
+                  <meta name="keywords" content="Building Of Website">
+                  <!--Responsive on other devices-->
+                  <meta name="viewport"content="width=device-width, initial-scale=1"/>
+                  <!--Favicon-->
+                  <link rel="icon" href="./hussein.png" type="image/x-icon">
+                  <!--Styling the Page-->
+                  <style>
+                       /*Tablet View*/
+                       @media screen and (min-width:767px) and (max-width:1023px){
+                             /*Body of the page*/
+                         body{width: 100%;background: linear-gradient(125deg,#050240,#335CC5)}
+                         /*End of the body*/
+                         
+                         /*Navigation Bar*/
+                         nav{display: flex;flex-direction: row;justify-content: center;width: 100%;box-shadow: 1.5px 1.5px 3px dodgerblue;
+                              position: fixed;background: linear-gradient(45deg,#050240,#050240,#335CC5);z-index: 1;
+                              margin-top: -50px;height: 250px;;}
+
+                         .navigationlist{margin: 120px 30px 0px -30px;display: none;}
+
+                         .navigationimage{width: 7cm;margin-right: 450px;height: 250px;}
+                         /*End Navigation*/
+
+                         /*Mainsection1*/
+                         .mainsection1{margin-top: 70px;display: flex;justify-content: center;height: 750px;padding-top: 200px;}
+
+                         .mainsubsection1{margin-right: 130px;}
+
+                         .mainsubsection1>h1{width: 720px;font-size: 60px;}
+
+                         .mainsubsection1>p{width: 600px;margin-top: 30px;font-size: 20px;color: lightgrey;}
+
+                         .mainsubsection1>div{margin: 30px 0px;}
+
+                         .butn1{border-radius: 20px;width:4cm;}
+
+                         .butn2{width:5cm;background-color: #050240;border-radius: 20px;padding: 4px;margin-left: 10px;}
+
+                         .butn2>i{color: white;font-size: 30px;}
+
+                         .butn2>span{font-size: 18px;}
+
+                         .mainsubsection2{margin-top: 10px;}
+
+                         .mainsubsection2>img{width: 10cm;height:10cm;}
+
+                         /*End Mainsection1*/
+
+                         /*Mainsection3*/
+                         .mainsection3{background: linear-gradient(45deg,#050240,#335CC5);}
+
+                         .mainsubsection3{height: 500px;display: flex;justify-content: center;}
+                         
+                         .sub_mainsubsection3{margin: 70px 100px 0px 70px}
+
+                         .sub_mainsubsection3>img{height: 10cm;}
+
+                         .sub2_mainsubsection3{margin: 120px 120px;}
+
+                         .sub2_mainsubsection3>p{color: lightgrey;font-size: 20px;}
+
+                         .sub2_mainsubsection3>div{display: grid;}
+
+                         .sub2_mainsubsection3>div>div>span{color: white;display: flex;justify-content: space-between;}
+
+                         .sub2_mainsubsection3>div>div>progress{width: 17cm;color: #050240;height: 0.6cm;}
+
+                         /*addedsection*/
+                         .addedsection{height: 600px;display: flex;justify-content: center;}
+
+                         .subaddedsection{margin: 170px 220px 0px 0px;}
+
+                         .subaddedsection>h2{color: white;font-size: 50px;}
+
+                         .subaddedsection>p{width: 650px;margin-top: 10px;color: lightgrey;font-size: 25px;}
+
+                         .second_subaddedsection{margin: 120px 0px 0px 70px}
+
+                         .second_subaddedsection>img{height: 10cm;}
+                         /*End addedsection*/
+                         /*End Mainsection3*/
+                         a{text-decoration: none;cursor: pointer;color: white;margin: 10px 10px 0px 10px;}
+
+                         a:hover{color: dodgerblue;text-decoration: none;transition: all 1s;}
+
+                         .Exception{text-decoration: none;cursor: pointer;color: white;margin: -2px 40px 0px 10px;
+                              border:3px solid dodgerblue;height: 1cm;width: 4.5cm;padding: 5px 32px;border-radius: 30px;}
+
+                         img{color: white;}
+
+                         /*Hidden Overflow*/
+
+                         #panel{width: 0;transition: 1s;z-index: 1;position: fixed;top:0;left:0;overflow: hidden;
+                              display: flex;justify-content: center}
+
+                         #panel>div>h3{font-size: 30px;margin-top: 100px;cursor: pointer;margin-right:200px}
+
+                         .overlay{font-size: 30px;margin-top: 100px;cursor: pointer;margin-right:200px}
+
+                         .overlay:hover{color: dodgerblue;text-decoration: none;}
+
+                         .overlaylinksembody{display: flex;margin-left: 70px;flex-direction: column;margin-right: 10px;}
+
+                         .overlaylinksembody>span{display: flex;margin-top: -30px;cursor: pointer;}
+
+                         #prop{display: flex;margin-left: 100px;}
+
+                         /*End Hidden Overflow*/
+
+                         /*FOoter of the page*/
+
+                         footer{background: linear-gradient(125deg,#050240,#050240,#335CC5);
+                              text-align: center;display: flex;justify-content: center;flex-direction: column;}
+
+                         footer>a>h2{margin-top: 50px;font-size:60px;font-weight: bold;}
+
+                         footer>p{margin: 20px 120px 0px 120px;font-size: 20px;color: lightgray;}
+
+                         .skills{margin-top: 80px;display: flex;justify-content: center;}
+
+                         .skills>div{display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(3,1fr);gap: 50px;}
+
+                         .skilldit{margin: 80px 30px 0px 30px;color: lightgray;}
+
+                         .skillmip{margin: 100px 30px 0px 30px;color: lightgray;}
+
+                         .skills2{display: flex;justify-content:center;margin-top: -150px;}
+
+                         .skills2>.jind{width: 8cm;height:11cm;background: linear-gradient(45deg,#050240,#335CC5);border-radius: 30px;
+                              display: flex;flex-direction: column;}
+
+                         .jind>img{width: 7cm;height: 6cm;margin:30px 20px 0px 20px;border-radius: 30px;object-fit:cover;transition: 1s;}
+
+                         .jind>h5{margin-top: 25px;}
+
+                         .jind2{width: 24cm;height:11cm;background: linear-gradient(45deg,#050240,#335CC5);
+                              border-radius: 30px;margin-left: 40px;}
+
+                         .jind2>h5{float: left;margin: 25px 0px 0px 25px;}
+
+                         .jind2>div{display: flex;flex-direction: column;clear: left;}
+
+                         .jind2>div>p{margin:10px 0px 0px 35px;width: 22cm;text-align: left;color: lightgrey;font-size: 17px;transition: 1s;}
+
+                         .fa-quote-left{color: #050240;display: flex;margin-left: 30px;font-size: 60px;margin-top: 20px;}
+
+                         .fa-quote-right{color: #050240;display: flex;margin-right: 30px;font-size: 60px;margin-top: 20px;justify-content: flex-end;}
+
+                         .rectangular-box,.rectangular-box2,.rectangular-box3,.rectangular-box4,.rectangular-box5,.rectangular-box6
+                         {width: 10cm;height:5cm;border:3px solid rgb(6, 101, 197);border-radius: 30px;
+                              background-color: rgba(100%, 100%, 100%, 10%);backdrop-filter: blur(50px);transform: 0.7ss;}
+
+                         .rectangular-box:hover,.rectangular-box2:hover,.rectangular-box3:hover,.rectangular-box4:hover,
+                         .rectangular-box5:hover,.rectangular-box6:hover
+                         {border: 3px solid rgb(6, 101, 197);box-shadow: 3px 3px 3px dodgerblue;transition: 0.7s;cursor: pointer;}
+
+                         .rectangular-box>img,.rectangular-box2>img,.rectangular-box3>img,.rectangular-box4>img,
+                         .rectangular-box5>img,.rectangular-box6>img
+                         {width: 2cm;height:2cm;position:absolute;top:-30px;left:150px;border-radius: 20%;border: 4px solid rgb(6, 101, 197);}
+
+                         .skills3{background: linear-gradient(45deg,#050240,#335CC5);margin-top: 80px;display: flex;justify-content: center;height: 400px;}
+
+                         .sub_skill3{display: flex;justify-content: space-between;margin-left: 200px;}
+
+                         .trill3,.subt_trill3{display: flex;flex-direction: column;}
+
+                         .subt_trill3>h2{margin: 50px 0px 0px 0px;float: left;font-size: 57px;width: 200px;}
+
+                         .subt_trill3>div{display: flex;justify-content: space-between;margin-top: 80px;}
+
+                         .homepage{display: flex;cursor: pointer;margin-left: 50px;}
+
+                         .homepage>p{font-size: 20px;margin-top: 30px;margin-left: -20px;}
+
+                         .neovill{display: flex;flex-direction: column;margin-top: 25px;margin-left: 160px;}
+
+                         .neovill>span{display: flex;}
+
+                         .neovill>span>a{margin-top: 30px;}
+
+                         .neovill>div{display: flex;justify-content: space-between;}
+
+                         .neovill>div>div{display: flex;}
+
+                         .neovill>div>div>p{font-size: 20px;margin-top: 45px;margin-left: -20px;}
+
+                         .neovill2{margin-top: 30px;margin-left:0px;}
+
+                         .neovill2>span, .neovill2>div{display: flex;}
+
+                         .neovill2>span>a{margin-top: 20px;}
+
+                         .neovill2>div>p{font-size: 17px;margin-top: 200px;margin-left: 20px;}
+
+                         /*End Footer*/
+
+                         *{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}   
+                        }
+
+
+
+                        /*SmartPhone View*/
+                        @media screen and (max-width:767px){
+
+                         
+                               
+                        }
+
+
+
+                        
+                    /*Desktop View*/
+                    @media screen and (min-width:1024px){
+                         @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+                         /*Body of the page*/
+                         body{width: 100%;background: linear-gradient(125deg,#050240,#335CC5)}
+                         /*End of the body*/
+                         
+                         /*Navigation Bar*/
+                         nav{display: flex;flex-direction: row;justify-content: center;width: 100%;box-shadow: 1.5px 1.5px 3px dodgerblue;
+                              position: fixed;background: linear-gradient(45deg,#050240,#050240,#335CC5);z-index: 1;
+                              margin-top: -50px;height: 250px;}
+
+                         .navigationlist{margin: 120px 30px 0px -30px;display: flex;}
+
+                         .navigationimage{width: 7cm;margin-right: 450px;height: 250px;}
+                         /*End Navigation*/
+
+                         /*Mainsection1*/
+                         .mainsection1{margin-top: 70px;display: flex;justify-content: center;height: 750px;padding-top: 200px;}
+
+                         .mainsubsection1{margin-right: 130px;}
+
+                         .mainsubsection1>h1{width: 720px;font-size: 60px;}
+
+                         .mainsubsection1>p{width: 600px;margin-top: 30px;font-size: 20px;color: lightgrey;}
+
+                         .mainsubsection1>div{margin: 30px 0px;}
+
+                         .butn1{border-radius: 20px;width:4cm;}
+
+                         .butn2{width:5cm;background-color: #050240;border-radius: 20px;padding: 4px;margin-left: 10px;}
+
+                         .butn2>i{color: white;font-size: 30px;}
+
+                         .butn2>span{font-size: 18px;}
+
+                         .mainsubsection2{margin-top: 10px;}
+
+                         .mainsubsection2>img{width: 10cm;height:10cm;}
+
+                         /*End Mainsection1*/
+
+                         /*Mainsection3*/
+                         .mainsection3{background: linear-gradient(45deg,#050240,#335CC5);}
+
+                         .mainsubsection3{height: 500px;display: flex;justify-content: center;}
+                         
+                         .sub_mainsubsection3{margin: 70px 100px 0px 70px}
+
+                         .sub_mainsubsection3>img{height: 10cm;}
+
+                         .sub2_mainsubsection3{margin: 120px 120px;}
+
+                         .sub2_mainsubsection3>p{color: lightgrey;font-size: 20px;}
+
+                         .sub2_mainsubsection3>div{display: grid;}
+
+                         .sub2_mainsubsection3>div>div>span{color: white;display: flex;justify-content: space-between;}
+
+                         .sub2_mainsubsection3>div>div>progress{width: 17cm;color: #050240;height: 0.6cm;}
+
+                         /*addedsection*/
+                         .addedsection{height: 600px;display: flex;justify-content: center;}
+
+                         .subaddedsection{margin: 170px 220px 0px 0px;}
+
+                         .subaddedsection>h2{color: white;font-size: 50px;}
+
+                         .subaddedsection>p{width: 650px;margin-top: 10px;color: lightgrey;font-size: 25px;}
+
+                         .second_subaddedsection{margin: 120px 0px 0px 70px}
+
+                         .second_subaddedsection>img{height: 10cm;}
+                         /*End addedsection*/
+                         /*End Mainsection3*/
+                         a{text-decoration: none;cursor: pointer;color: white;margin: 10px 10px 0px 10px;}
+
+                         a:hover{color: dodgerblue;text-decoration: none;transition: all 1s;}
+
+                         .Exception{text-decoration: none;cursor: pointer;color: white;margin: -2px 40px 0px 10px;
+                              border:3px solid dodgerblue;height: 1cm;width: 4.5cm;padding: 5px 32px;border-radius: 30px;}
+
+                         img{color: white;}
+
+                         /*Hidden Overflow*/
+
+                         #panel{width: 0;transition: 1s;z-index: 1;position: fixed;top:0;left:0;overflow: hidden;
+                              display: flex;justify-content: center}
+
+                         #panel>div>h3{font-size: 30px;margin-top: 100px;cursor: pointer;margin-right:200px}
+
+                         .overlay{font-size: 30px;margin-top: 100px;cursor: pointer;margin-right:200px}
+
+                         .overlay:hover{color: dodgerblue;text-decoration: none;}
+
+                         .overlaylinksembody{display: flex;margin-left: 70px;flex-direction: column;margin-right: 10px;}
+
+                         .overlaylinksembody>span{display: flex;margin-top: -30px;cursor: pointer;}
+
+                         #prop{display: flex;margin-left: 100px;}
+
+                         /*End Hidden Overflow*/
+
+                         /*FOoter of the page*/
+
+                         footer{background: linear-gradient(125deg,#050240,#050240,#335CC5);
+                              text-align: center;display: flex;justify-content: center;flex-direction: column;}
+
+                         footer>a>h2{margin-top: 50px;font-size:60px;font-weight: bold;}
+
+                         footer>p{margin: 20px 120px 0px 120px;font-size: 20px;color: lightgray;}
+
+                         .skills{margin-top: 80px;display: flex;justify-content: center;}
+
+                         .skills>div{display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(3,1fr);gap: 50px;}
+
+                         .skilldit{margin: 80px 30px 0px 30px;color: lightgray;}
+
+                         .skillmip{margin: 100px 30px 0px 30px;color: lightgray;}
+
+                         .skills2{display: flex;justify-content:center;margin-top: -150px;}
+
+                         .skills2>.jind{width: 8cm;height:11cm;background: linear-gradient(45deg,#050240,#335CC5);border-radius: 30px;
+                              display: flex;flex-direction: column;}
+
+                         .jind>img{width: 7cm;height: 6cm;margin:30px 20px 0px 20px;border-radius: 30px;object-fit:cover;transition: 1s;}
+
+                         .jind>h5{margin-top: 25px;}
+
+                         .jind2{width: 24cm;height:11cm;background: linear-gradient(45deg,#050240,#335CC5);
+                              border-radius: 30px;margin-left: 40px;}
+
+                         .jind2>h5{float: left;margin: 25px 0px 0px 25px;}
+
+                         .jind2>div{display: flex;flex-direction: column;clear: left;}
+
+                         .jind2>div>p{margin:10px 0px 0px 35px;width: 22cm;text-align: left;color: lightgrey;font-size: 17px;transition: 1s;}
+
+                         .fa-quote-left{color: #050240;display: flex;margin-left: 30px;font-size: 60px;margin-top: 20px;}
+
+                         .fa-quote-right{color: #050240;display: flex;margin-right: 30px;font-size: 60px;margin-top: 20px;justify-content: flex-end;}
+
+                         .rectangular-box,.rectangular-box2,.rectangular-box3,.rectangular-box4,.rectangular-box5,.rectangular-box6
+                         {width: 10cm;height:5cm;border:3px solid rgb(6, 101, 197);border-radius: 30px;
+                              background-color: rgba(100%, 100%, 100%, 10%);backdrop-filter: blur(50px);transform: 0.7ss;}
+
+                         .rectangular-box:hover,.rectangular-box2:hover,.rectangular-box3:hover,.rectangular-box4:hover,
+                         .rectangular-box5:hover,.rectangular-box6:hover
+                         {border: 3px solid rgb(6, 101, 197);box-shadow: 3px 3px 3px dodgerblue;transition: 0.7s;cursor: pointer;}
+
+                         .rectangular-box>img,.rectangular-box2>img,.rectangular-box3>img,.rectangular-box4>img,
+                         .rectangular-box5>img,.rectangular-box6>img
+                         {width: 2cm;height:2cm;position:absolute;top:-30px;left:150px;border-radius: 20%;border: 4px solid rgb(6, 101, 197);}
+
+                         .skills3{background: linear-gradient(45deg,#050240,#335CC5);margin-top: 80px;display: flex;justify-content: center;height: 400px;}
+
+                         .sub_skill3{display: flex;justify-content: space-between;margin-left: 200px;}
+
+                         .trill3,.subt_trill3{display: flex;flex-direction: column;}
+
+                         .subt_trill3>h2{margin: 50px 0px 0px 0px;float: left;font-size: 57px;width: 200px;}
+
+                         .subt_trill3>div{display: flex;justify-content: space-between;margin-top: 80px;}
+
+                         .homepage{display: flex;cursor: pointer;margin-left: 50px;}
+
+                         .homepage>p{font-size: 20px;margin-top: 30px;margin-left: -20px;}
+
+                         .neovill{display: flex;flex-direction: column;margin-top: 25px;margin-left: 160px;}
+
+                         .neovill>span{display: flex;}
+
+                         .neovill>span>a{margin-top: 30px;}
+
+                         .neovill>div{display: flex;justify-content: space-between;}
+
+                         .neovill>div>div{display: flex;}
+
+                         .neovill>div>div>p{font-size: 20px;margin-top: 45px;margin-left: -20px;}
+
+                         .neovill2{margin-top: 30px;margin-left:0px;}
+
+                         .neovill2>span, .neovill2>div{display: flex;}
+
+                         .neovill2>span>a{margin-top: 20px;}
+
+                         .neovill2>div>p{font-size: 17px;margin-top: 200px;margin-left: 20px;}
+
+                         /*End Footer*/
+
+                         *{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+                    }
+                  </style>
+                  <!--end styling-->
+         </head>
+         <body>
+
+          <!--Navigation bar-->
+
+               <nav>
+                    <div>
+                         <a href="./Portfolio.html"><img class="navigationimage" src="./hussein.png
+                              " /></a>
+                    </div>
+                    <div class="navigationlist">
+                         <a href="#Home" class=""><i class="fa fa-home"></i>&nbsp;Home</a>
+                         <a href="#About" class=""><i class="fa fa-user-circle-o"></i>&nbsp;About</a>
+                         <a href="#Services" class=""><i class="fa fa-thumbs-up"></i>&nbsp;Services</a>
+                         <a href="" class=""><i class="fa fa-book"></i>&nbsp;Portfolio</a>
+                         <a href="" class=""><i class="fa fa-group"></i>&nbsp;Team</a>
+                         <a href="mailto:akanjiabayomi2@gmail.com" class=""><i class="fa fa-envelope"></i>&nbsp;Contact</a>
+                         <a class="Exception" id="drop">Drop Down&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>
+                    </div>
+               </nav>
+
+          <!--End Navigation bar-->
+
+          <!--Main-->
+
+               <a name="Home"></a>
+               <main>
+
+          <!--Mainsection1-->
+
+                    <section class="mainsection1">
+                         <div class="mainsubsection1">
+                              <h1 class="text-white">Web Development and <span style="color: rgb(6, 101, 197);">Database design</span></h1>
+                              <p>
+                                   We are aimed at giving you the best solution to all of your problems.
+                                   We deliver to you the best products to fit into your needs at the right time. 
+                                   We help you to grow, learn more and make progress.
+                                   We are here to give you the best services you deserve.
+                                   Our team consists of young professional tech experts who are passionate about their work.
+                                   They focus on bringing in the latest and newest technologies to solve problems
+                              </p>
+                              <div>
+                                   <button type="button" class="btn bg-primary text-white fw-bold butn1">Get Started</button>
+                                   <button type="button" class="btn text-white fw-bold butn2">
+                                        <i class="fa fa-play-circle"></i>
+                                        <span class="p-2">Watch Video</span>
+                                   </button>
+                              </div>
+                         </div>
+                         <div class="mainsubsection2">
+                              <img id="acer" alt="Author's image" 
+                              src="https://upload.wikimedia.org/wikipedia/commons/6/66/Cartoon_Man_Approving_His_New_Computer.svg"/>    
+                         </div>
+                  </section>
+
+          <!--End Mainsection1-->
+
+          <!--Mainsection3-->
+
+                  <section class="mainsection3">
+
+          <!--Mainsubsection3-->
+
+                  <section class="mainsubsection3">
+                         <div class="sub_mainsubsection3">
+                           <img src="https://www.andolasoft.com/images/new/nodejs/NodeJS-Dedicated-Developer.svg"/>
+                         </div>
+                         <div class="sub2_mainsubsection3">
+                              <h2 class="fw-bold text-white">To know more about me</h2>
+                              <p id="anp">I Learned in Nigeria and now 3 years since my training in this section</p>
+                              <div>
+                                   <div>
+                                        <span>
+                                             <strong>HTML</strong><strong>98%</strong>
+                                        </span>
+                                        <progress max="100" value="98"></progress>
+                                   </div>
+                                   <div>
+                                        <span>
+                                             <strong>CSS</strong><strong>90%</strong>
+                                        </span>
+                                        <progress max="100" value="90"></progress>
+                                   </div>
+                                   <div>
+                                        <span>
+                                             <strong>JAVASCRIPT</strong><strong>60%</strong>
+                                        </span>
+                                        <progress max="100" value="60"></progress>
+                                   </div>
+                                   <div>
+                                        <span>
+                                             <strong>PHOTOSHOP</strong><strong>40%</strong>
+                                        </span>
+                                        <progress max="100" value="40"></progress>
+                                   </div>
+                              </div>
+                         </div>
+                  </section>
+
+               <!--End Mainsubsection3-->
+
+               <!--Added Section-->
+
+               <section class="addedsection">
+                    <div class="subaddedsection">
+                         <h2 class="fw-bold">We bring out the best</h2>
+                         <p id="see">
+                              We are aimed at giving you the best solution to all of your problems. We deliver to you the best products to
+                              fit into your needs at the right time. 
+                              We help you to grow, learn more and make progress. We are here to give you the best services you deserve.
+                              Our team consists of young professional tech experts who are passionate about their work. They focus on
+                              bringing in the latest and newest technologies to solve problems.
+                         </p>
+                    </div>
+                    <div class="second_subaddedsection">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Cartoon_Man_Approving_His_New_Computer.svg"/>
+                    </div>
+            </section>
+
+            <!--End Added Section-->
+
+            </section>
+
+          <!--End Mainsection3-->
+
+          <!--Hidden Overflow-->
+
+          <section id="panel" class="closebtn">
+                    <div>
+                         <h3 id="DD">DROPDOWN</h3>
+                    </div>
+                    <div class="overlaylinksembody">
+                    <span style="margin-top: 0px;">
+                         <a class="overlay">&rarr;&nbsp;Our Work</a>
+                    </span>
+                    <span>
+                         <a class="overlay">&rarr;&nbsp;Know Us Better</a>
+                    </span>
+                    <span>
+                         <a class="overlay">&rarr;&nbsp;Join Our Team</a>
+                    </span>
+                    <span>
+                         <a class="overlay">&rarr;&nbsp;Training Program</a>
+                    </span>
+                    </div>
+                    <div style="display: grid;">
+                         <span id="prop">
+                              <a style="margin-top:100px;font-size: 25px;" class="overlay">Close X</a>
+                         </span>
+                    </div>
+          </section>
+
+          <!--End Hidden Overflow-->
+
+                  </main>
+
+          <!--End Main-->
+
+          <!--footer-->
+          <footer>
+               <a name="Services">
+                    <h2 class="text-center text-white">Our <span style="color: rgb(6, 101, 197);">Services</span></h2>
+               </a>
+               <p class="adp">
+                    Security, high graphics and beauty is a sign of your interest. We'll get this beauty for you.
+                    My Name is Akanji Abayomi Hussein and I'm a Frontend Web designer
+               </p>
+               <div class="skills">
+                    <div>
+                         <div class="rectangular-box">
+                              <img src="https://cdn3d.iconscout.com/3d/free/thumb/html-5728485-4781249.png"/>
+                              <p class="text-center skilldit">
+                                   I am Extremely Skilled in HyperText Mark Up Language and I have gained a minimum of 2 years Experience.
+                              </p>
+                         </div>
+                         <div class="rectangular-box2">
+                              <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"/>
+                              <p class="text-center skilldit">
+                                   I am Extremely Skilled in Cascading Styling Sheets and I have gained a minimum of 2 years 
+                                   Experience to animates boxes and texts
+                              </p>
+                         </div>
+                         <div class="rectangular-box3">
+                              <img src="https://avatars.githubusercontent.com/u/2918581?s=280&v=4"/>
+                              <p class="text-center skillmip">
+                                   I have Experience in Responsive designs and i've acquired knowledge on bootstrap
+                              </p>
+                         </div>
+                         <div class="rectangular-box4">
+                              <img src="https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"/>
+                              <p class="text-center skillmip">
+                                   I have 2 years Experience on Phyton
+                              </p>
+                         </div>
+                         <div class="rectangular-box5">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"/>
+                              <p class="text-center skilldit text-primary">
+                                   I am Extremely Skilled in Javascript functionalities and I have gained a minimum of 2 years Experience.
+                              </p>
+                         </div>
+                         <div class="rectangular-box6">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png"/>
+                              <p class="text-center skilldit">
+                                   I am Extremely Skilled in HyperText Mark Up Language and I have gained a minimum of 2 years Experience.
+                              </p>
+                         </div>
+                    </div>
+                         <a name="About"></a>
+               </div>
+               <div class="skills2">
+                    <div class="shadow jind">
+                         <img src="./xclu.jpg" id="Author" 
+                         aria-busy="true" role="alert" aria-label="Loading"/>
+                         <h5 class="text-white fw-bold">Akanji Abayomi Hussein</h5>
+                         <p id="" style="color: #335CC5;" class="fw-bold">Web Developer</p>
+                    </div>
+                    <div class="shadow jind2">
+                         <h5 class="text-white fw-bold">About Me</h5><br/>
+                         <div>
+                              <span class="fa fa-quote-left"></span>
+                              <p id="changeall">
+                                   Before this program I've heard alot about data analysis, but i dont know the path to take or which trend to follow, signing up for this 
+                                   program Shown me the way and process to follow to become a data analyst. Today i can comfortably work with different data analytics tools
+                                   ranging from excel, PowerBi, Tableau and can even work with SQL using different dialect like SQLite, BigQuery, SQLSERVER.
+                                   I have taken different professional courses trending this path, I'm currently in the 6th course of Google Data analytics professional
+                                   certificate course. All thanks to TeliyTech, Mission_2_Pro to me has been an engine that pushed and energised my journey in becoming a pro
+                                   in data analytics. All thanks to all the tutors and organisers, may God bless you all.
+                              </p>
+                              <span class="fa fa-quote-right"></span>
+                         </div>
+                    </div>
+               </div>
+               <div class="skills3">
+                    <div class="sub_skill3">
+                         <div class="trill3">
+                              <div class="subt_trill3">
+                                   <h2 class="text-white fw-bold">Get In <span style="color: white">Touch</span></h2>
+                                   <div>
+                                        <div class="homepage">
+                                             <p class="text-white">Hussein Concept</p>
+                                        </div>
+                                   </div>
+                              </div>
+                    </div>
+                    <div class="neovill">
+                         <span>
+                              <a class="overlay">Work With Us</a>
+                         </span>
+                         <span>
+                              <a href="mailto:akanjiabayomi2@gmail.com" class="overlay">Email Me</a>
+                         </span>
+                         <span>
+                              <a href="call:08064116181" class="overlay">Contact me</a>
+                         </span>
+                         <div>
+                              <div>
+                                   <p class="text-white">&copy; Hussein Concept All rights reserved</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="neovill2">
+                         <span>
+                              <a class="overlay">Training Program</a>
+                         </span>
+                         <div>
+                                   <p class="text-white">Privacy Policy&nbsp;&nbsp;Data Privacy</p>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+          <!--End of the footer-->
+                  <!--Script of the Portfolio-->
+                  <script>
+                    function dynamicImages(){
+                    var allImages = ["https://upload.wikimedia.org/wikipedia/commons/6/66/Cartoon_Man_Approving_His_New_Computer.svg",
+                    "https://www.andolasoft.com/images/new/nodejs/NodeJS-Dedicated-Developer.svg", "https://upload.wikimedia.org/wikipedia/commons/8/85/Cartoon_Call_Centre_Guy_Using_A_Computer.svg"];
+                    var numberSwap = Math.floor(3*Math.random());
+                    var changingArrayIndex = allImages[numberSwap];
+                    var image = document.getElementById("acer");
+                    image.src = changingArrayIndex;
+                    image.style.transitionDuration = "1s";
+                    image.style.webkitTransitionDuration = "1s"
+                    }
+                    setInterval(dynamicImages, 1000)
+                    var drp=document.getElementById("drop").addEventListener("click",function overlay(){
+                         document.getElementById("panel").style.width = "100%";
+                         document.getElementById("panel").style.height = "600px";
+                         document.getElementById("panel").style.background= "linear-gradient(45deg,#050240,#335CC5)";
+                         document.getElementById("panel").style.color="white";
+                    })
+                    var drrp=document.getElementById("prop").addEventListener("click",function closeNav(){
+                         document.getElementById("panel").style.width="0";
+                         document.getElementById("panel").style.height="0";
+                         document.getElementById("panel").style.animationDelay="1s"
+                    })
+                    function makechange(){
+                         var authorImages = ["./rut.jpg", "./mid2.jpg", "./abayor.jpg", "meek.jpg"];
+                         var shuffleNumber = Math.floor(Math.random()*4);
+                         var selection = authorImages[shuffleNumber];
+                         if(selection == undefined){
+                              document.getElementById("Author").src = ""
+                         }
+                         else{
+                              var change = document.getElementById("Author");
+                              change.src = selection;
+                              change.style.transition = "1s"
+                         }
+                         //Author's quotes
+                         var authorQ = [`Before this program I've heard alot about data analysis, but i dont know the path to take or which trend to follow, signing up for this 
+                                   program Shown me the way and process to follow to become a data analyst. Today i can comfortably work with different data analytics tools
+                                   ranging from excel, PowerBi, Tableau and can even work with SQL using different dialect like SQLite, BigQuery, SQLSERVER.
+                                   I have taken different professional courses trending this path, I'm currently in the 6th course of Google Data analytics professional
+                                   certificate course. All thanks to TeliyTech, Mission_2_Pro to me has been an engine that pushed and energised my journey in becoming a pro
+                                   in data analytics. All thanks to all the tutors and organisers, may God bless you all.`, `We are aimed at giving you the best solution to all of your problems. We deliver to you the best products to
+                                   fit into your needs at the right time. 
+                                   We help you to grow, learn more and make progress. We are here to give you the best services you deserve.
+                                   Our team consists of young professional tech experts who are passionate about their work. They focus on
+                                   bringing in the latest and newest technologies to solve problems.`, `Before I got into mission2pro UI/UX training I had a little knowledge and insight 
+                                   about what UI/UX means and what it entails but when I started mission2pro I knew what UI/UX means how to design and which app to use. Most especially 
+                                   the videos which really helped me a lot and I really appreciate. Thank You Mission2pro for giving me the best experience ever.`,`
+                                   One of my mentors once said he will never do anything worthwhile without having someone mentor him on how to do it. In achieving my
+                                   goal of exploring data science, I am indeed fortunate to have some great mentors from teliy tech streamline the learning process.
+                                   In the course of some months, I have mastered the basics of excel and SQL for data science as well as how to create visualizations
+                                   using powerbi. Looking forward to deepening my understanding of data science.Thanks a lot teliy tech for the mission2pro program.`];
+                         var selection2 = authorQ[shuffleNumber];
+                         if(selection == undefined){
+                              document.getElementById("changeall").innerHTML = ""
+                         }
+                         else{
+                              var change = document.getElementById("changeall");
+                              change.innerHTML = selection2;
+                              change.style.transition = "1s"
+                         }
+                    }
+                    setInterval(makechange, 6000)
+                  </script>
+                  <!--Noscript of the Portfolio-->
+                  <noscript>
+                    Sorry, Your browser dosen't support javascript
+                  </noscript>
+         </body>
+</html>

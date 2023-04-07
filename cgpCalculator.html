@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en" contenteditable="false" dir="ltr">
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>CGP CALCULATOR</title>
+         <!--Local Bootstrap-->
+         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+         <!--Universal Bootstrap-->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+         <!--Description of the webpage-->
+         <meta name="description" content="">
+         <!--Author of a Page-->
+         <meta name="author" content="Akanji Abayomi Hussein">
+         <!--Keywords for search engine(S.E.O)-->
+         <meta name="" content="">
+         <style>
+                  body{
+                           display: flex;
+                           justify-content: center;
+                           transition: 1s;
+                  }
+                  #embody{
+                           width:500px;height: 700px;
+                           border-radius: 10px;
+                           margin: 20px 0px;
+                           background-color: aliceblue;
+                           transition: 1s;
+                  }
+                  #embody>#header{
+                           width: 480px;height: 100px;
+                           border-radius: 10px;
+                           margin: 10px;
+                           background-color: white;
+                           transition: 1s;
+                  }
+                  #header>p{
+                           font-size: 30px;
+                           font-weight: bold;
+                           padding: 25px 0px;
+                           text-align: center;
+                           color: dodgerblue;
+                  }
+                  #embody>#body{
+                           width: 480px;height: 450px;
+                           border-radius: 10px;
+                           margin: 10px;
+                           background-color: white;
+                           display: flex;
+                           flex-direction: column;
+                           transition: 1s;
+                           overflow-y: scroll;
+                           overflow-x: hidden;
+                           /*Overflow Y*/
+                  }
+                  ::-webkit-scrollbar{
+                    width: 10px;
+                  }
+                  ::-webkit-scrollbar-thumb{
+                    background-color: rgb(93, 174, 255);
+                    border-radius: 10px;
+                  }
+                  ::-webkit-scrollbar-track{
+                    box-shadow: inset 0 0 5px grey;
+                    border-radius: 10px;
+                  }
+                  #body>div{
+                           width: 460px;height: 50px;
+                           border-radius: 10px;
+                           margin: 5px 10px;
+                           display: flex;
+                           justify-content: space-between;
+                           color: rgb(93, 174, 255);
+                           padding: 5px;
+                           transition: 1s;
+                  }
+                  #embody>#footer{
+                           width: 480px;height: 110px;
+                           border-radius: 10px;
+                           margin: 10px;
+                           background-color: white;
+                           display: flex;
+                           flex-direction: row;
+                           justify-content: space-between;
+                           padding-top: 10px;
+                           transition: 1s;
+                           padding-top: 30px;
+                  }
+                  #course_unit{
+                    width: 1.2cm;height: 0.7cm;
+                    border: 1px solid dodgerblue;
+                    border-radius: 5px;
+                    padding-left: 10px;
+                    color: dodgerblue;
+                    background-color: transparent;
+                  }
+                  select{
+                    width: 1.5cm;
+                    border: 1px solid dodgerblue;
+                    color: dodgerblue;
+                    background-color: transparent;
+                  }
+                  .fa{
+                    cursor: pointer;
+                    font-style: normal;
+                    font-size: 20px;
+                  }
+                  *{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+                  /*Theme*/
+                  #toggle{
+                      width: 1.5cm;
+                      height: 1.5cm;
+                      border-radius: 50%;
+                      cursor: pointer;
+                      margin-top: 650px;
+                      margin-left: 20px;
+                    }
+                    #toggle>i{
+                      font-size: 30px;
+                      padding: 14px;
+                      cursor: pointer;
+                      color: dodgerblue;
+                    }
+         </style>
+</head>
+<body>
+         <div class="shadow xx" id="embody">
+                  <div class="shadow" id="header">
+                    <p title="CGP CALCULATOR">CGP CALCULATOR</p>
+                  </div>
+                  <div id="body">
+                           <div name="border">
+                                <span title="Course">
+                                  <abbr class="fw-bold" id="co1">Course</abbr> 
+                                  <i id="course1" class="fa fa-caret-down"></i>
+                                </span>
+                                <div style="margin-right: 10px;">
+                                    <span class="fw-bold">Units <input value="0" class="row1_unit" id="course_unit" type="number"/></span>
+                                    <span class="fw-bold" style="margin-left: 70px;">
+                                      Grade&nbsp;
+                                      <select class="row1_selection">
+                                        <option value="">Nil</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                      </select>
+                                    </span>
+                                </div>
+                            </div>
+
+                           <div name="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co2">Course</abbr> 
+                              <i id="course2" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row2_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row2_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co3">Course</abbr> 
+                              <i id="course3" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row3_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row3_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co4">Course</abbr> 
+                              <i id="course4" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row4_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row4_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co5">Course</abbr> 
+                              <i id="course5" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row5_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row5_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co6">Course</abbr> 
+                              <i id="course6" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row6_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row6_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co7">Course</abbr> 
+                              <i id="course7" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row7_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row7_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co8">Course</abbr> 
+                              <i id="course8" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row8_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row8_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <!--New-->
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co9">Course</abbr> 
+                              <i id="course9" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row9_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row9_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co10">Course</abbr> 
+                              <i id="course10" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row10_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row10_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+                           
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co11">Course</abbr> 
+                              <i id="course11" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row11_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row11_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co12">Course</abbr> 
+                              <i id="course12" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row12_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row12_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co13">Course</abbr> 
+                              <i id="course13" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row13_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row13_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co14">Course</abbr> 
+                              <i id="course14" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row14_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row14_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co15">Course</abbr> 
+                              <i id="course15" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row15_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row15_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co16">Course</abbr> 
+                              <i id="course16" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row16_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row16_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co17">Course</abbr> 
+                              <i id="course17" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row17_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row17_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co18">Course</abbr> 
+                              <i id="course18" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row18_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row18_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co19">Course</abbr> 
+                              <i id="course19" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row19_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row19_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co20">Course</abbr> 
+                              <i id="course20" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row20_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row20_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co21">Course</abbr> 
+                              <i id="course21" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row21_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row21_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co22">Course</abbr> 
+                              <i id="course22" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row22_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row22_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co23">Course</abbr> 
+                              <i id="course23" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row23_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row23_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co24">Course</abbr> 
+                              <i id="course24" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row24_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row24_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co25">Course</abbr> 
+                              <i id="course25" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row25_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row25_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co26">Course</abbr> 
+                              <i id="course26" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row26_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row26_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co27">Course</abbr> 
+                              <i id="course27" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row27_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row27_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co28">Course</abbr> 
+                              <i id="course28" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row28_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row28_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co29">Course</abbr> 
+                              <i id="course29" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row29_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row29_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+
+                           <div id="border">
+                            <span title="Course">
+                              <abbr class="fw-bold" id="co30">Course</abbr> 
+                              <i id="course30" class="fa fa-caret-down"></i>
+                            </span>
+                            <div style="margin-right: 10px;">
+                                <span class="fw-bold">Units <input value="0" class="row30_unit" id="course_unit" type="number"/></span>
+                                <span class="fw-bold" style="margin-left: 70px;">
+                                  Grade&nbsp;
+                                  <select class="row30_selection">
+                                    <option value="">Nil</option>
+                                    <option value="5">A</option>
+                                    <option value="4">B</option>
+                                    <option value="3">C</option>
+                                    <option value="2">D</option>
+                                    <option value="1">E</option>
+                                    <option value="0">F</option>
+                                  </select>
+                                </span>
+                            </div>
+                           </div>
+                  </div>
+                  <div class="shadow" id="footer">
+                    <p style="margin: 20px 0px 0px 20px;">
+                      <input id="result" type="button" class="btn btn-primary fw-bold btn-sm" value="calculate"/>
+                    </p>
+                    <div>
+                    <p style="font-size: 15px;margin-top: -10px;" class="text-primary">Total courses: &nbsp; <span id="tC">---</span></p>
+                    <p style="font-size: 15px;margin-top: -10px;" class="text-primary">Total Units: &nbsp; <span id="totalU">---</span></p>
+                    <p style="font-size: 15px;margin-top: -10px;" class="text-primary">Total Ponits: &nbsp; <span id="totalP">---</span></p>
+                    </div>
+                    <div style="display: flex;flex-direction: column;margin-right: 20px;">
+                    <p style="font-size: 15px;margin-top: -10px;" class="text-primary">Result: &nbsp; <span id="trial">---</span></p>
+                    <p style="font-size: 15px;margin-top: -10px;" class="text-primary">Position: &nbsp; <span id="explain">---</span></p>
+                    <p style="font-size: 15px;margin-top: -10px;" class="text-primary">Comment: &nbsp; <span id="advice">---</span></p>
+                    </div>
+                  </div>
+         </div>
+         <!--Theme-->
+         <div title="Click to bring on dark theme, double click to bring on default" id="toggle" class="shadow">
+          <i id="themeIcon" class="fa">&#xf186</i>
+        </div>
+       <script>
+        var course1 = document.getElementById("course1");
+        course1.addEventListener("click", ()=>{
+          var name1 = window.prompt("Course Code?");
+          var attach = document.getElementById("co1");
+          if(name1 == '' || name1 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name1
+          }
+        })
+
+        var course2 = document.getElementById("course2");
+        course2.addEventListener("click", ()=>{
+          var name2 = window.prompt("Course Code?");
+          var attach = document.getElementById("co2");
+          if(name2 == '' || name2 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name2
+          }
+        })
+
+        var course3 = document.getElementById("course3");
+        course3.addEventListener("click", ()=>{
+          var name3 = window.prompt("Course Code?");
+          var attach = document.getElementById("co3");
+          if(name3 == '' || name3 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name3
+          }
+        })
+
+        var course4 = document.getElementById("course4");
+        course4.addEventListener("click", ()=>{
+          var name4 = window.prompt("Course Code?");
+          var attach = document.getElementById("co4");
+          if(name4 == '' || name4 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name4
+          }
+        })
+
+        var course5 = document.getElementById("course5");
+        course5.addEventListener("click", ()=>{
+          var name5 = window.prompt("Course Code?");
+          var attach = document.getElementById("co5");
+          if(name5 == '' || name5 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name5
+          }
+        })
+
+        var course6 = document.getElementById("course6");
+        course6.addEventListener("click", ()=>{
+          var name6 = window.prompt("Course Code?");
+          var attach = document.getElementById("co6");
+          if(name6 == '' || name6 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name6
+          }
+        })
+
+        var course7 = document.getElementById("course7");
+        course7.addEventListener("click", ()=>{
+          var name7 = window.prompt("Course Code?");
+          var attach = document.getElementById("co7");
+          if(name7 == '' || name7 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name7
+          }
+        })
+
+        var course8 = document.getElementById("course8");
+        course8.addEventListener("click", ()=>{
+          var name8 = window.prompt("Course Code?");
+          var attach = document.getElementById("co8");
+          if(name8 == '' || name8 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name8
+          }
+        })
+
+        var course9 = document.getElementById("course9");
+        course9.addEventListener("click", ()=>{
+          var name9 = window.prompt("Course Code?");
+          var attach = document.getElementById("co9");
+          if(name9 == '' || name9 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name9
+          }
+        })
+
+        var course10 = document.getElementById("course10");
+        course10.addEventListener("click", ()=>{
+          var name10 = window.prompt("Course Code?");
+          var attach = document.getElementById("co10");
+          if(name10 == '' || name10 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name10
+          }
+        })
+
+        var course11 = document.getElementById("course11");
+        course11.addEventListener("click", ()=>{
+          var name11 = window.prompt("Course Code?");
+          var attach = document.getElementById("co11");
+          if(name11 == '' || name11 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name11
+          }
+        })
+
+        var course12 = document.getElementById("course12");
+        course12.addEventListener("click", ()=>{
+          var name12 = window.prompt("Course Code?");
+          var attach = document.getElementById("co12");
+          if(name12 == '' || name12 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name12
+          }
+        })
+
+        var course13 = document.getElementById("course13");
+        course13.addEventListener("click", ()=>{
+          var name13 = window.prompt("Course Code?");
+          var attach = document.getElementById("co13");
+          if(name13 == '' || name13 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name13
+          }
+        })
+
+        var course14 = document.getElementById("course14");
+        course14.addEventListener("click", ()=>{
+          var name14 = window.prompt("Course Code?");
+          var attach = document.getElementById("co14");
+          if(name14 == '' || name14 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name14
+          }
+        })
+
+        var course15 = document.getElementById("course15");
+        course15.addEventListener("click", ()=>{
+          var name15 = window.prompt("Course Code?");
+          var attach = document.getElementById("co15");
+          if(name15 == '' || name15 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name15
+          }
+        })
+
+        var course16 = document.getElementById("course16");
+        course16.addEventListener("click", ()=>{
+          var name16 = window.prompt("Course Code?");
+          var attach = document.getElementById("co16");
+          if(name16 == '' || name16 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name16
+          }
+        })
+
+        var course17 = document.getElementById("course17");
+        course17.addEventListener("click", ()=>{
+          var name17 = window.prompt("Course Code?");
+          var attach = document.getElementById("co17");
+          if(name17 == '' || name17 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name17
+          }
+        })
+
+        var course18 = document.getElementById("course18");
+        course18.addEventListener("click", ()=>{
+          var name18 = window.prompt("Course Code?");
+          var attach = document.getElementById("co18");
+          if(name18 == '' || name18 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name18
+          }
+        })
+
+        var course19 = document.getElementById("course19");
+        course19.addEventListener("click", ()=>{
+          var name19 = window.prompt("Course Code?");
+          var attach = document.getElementById("co19");
+          if(name19 == '' || name19 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name19
+          }
+        })
+
+        var course20 = document.getElementById("course20");
+        course20.addEventListener("click", ()=>{
+          var name20 = window.prompt("Course Code?");
+          var attach = document.getElementById("co20");
+          if(name20 == '' || name20 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name20
+          }
+        })
+
+        var course21 = document.getElementById("course21");
+        course21.addEventListener("click", ()=>{
+          var name21 = window.prompt("Course Code?");
+          var attach = document.getElementById("co21");
+          if(name21 == '' || name21 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name21
+          }
+        })
+
+        var course22 = document.getElementById("course22");
+        course22.addEventListener("click", ()=>{
+          var name22 = window.prompt("Course Code?");
+          var attach = document.getElementById("co22");
+          if(name22 == '' || name22 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name22
+          }
+        })
+
+        var course23 = document.getElementById("course23");
+        course23.addEventListener("click", ()=>{
+          var name23 = window.prompt("Course Code?");
+          var attach = document.getElementById("co23");
+          if(name23 == '' || name23 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name23
+          }
+        })
+
+        var course24 = document.getElementById("course24");
+        course24.addEventListener("click", ()=>{
+          var name24 = window.prompt("Course Code?");
+          var attach = document.getElementById("co24");
+          if(name24 == '' || name24 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name24
+          }
+        })
+
+        var course25 = document.getElementById("course25");
+        course25.addEventListener("click", ()=>{
+          var name25 = window.prompt("Course Code?");
+          var attach = document.getElementById("co25");
+          if(name25 == '' || name25 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name25
+          }
+        })
+
+        var course26 = document.getElementById("course26");
+        course26.addEventListener("click", ()=>{
+          var name26 = window.prompt("Course Code?");
+          var attach = document.getElementById("co26");
+          if(name26 == '' || name26 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name26
+          }
+        })
+
+        var course27 = document.getElementById("course27");
+        course27.addEventListener("click", ()=>{
+          var name27 = window.prompt("Course Code?");
+          var attach = document.getElementById("co27");
+          if(name27 == '' || name27 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name27
+          }
+        })
+
+        var course28 = document.getElementById("course28");
+        course28.addEventListener("click", ()=>{
+          var name28 = window.prompt("Course Code?");
+          var attach = document.getElementById("co28");
+          if(name28 == '' || name28 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name28
+          }
+        })
+
+        var course29 = document.getElementById("course29");
+        course29.addEventListener("click", ()=>{
+          var name29 = window.prompt("Course Code?");
+          var attach = document.getElementById("co29");
+          if(name29 == '' || name29 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name29
+          }
+        })
+
+        var course30 = document.getElementById("course30");
+        course30.addEventListener("click", ()=>{
+          var name30 = window.prompt("Course Code?");
+          var attach = document.getElementById("co30");
+          if(name30 == '' || name30 == null){
+            attach.innerHTML = "Null"
+          }
+          else{
+          attach.innerHTML = name30
+          }
+        })
+
+        var finalOutput = document.querySelector("#result");
+        finalOutput.addEventListener("click", function(){
+          //Row1
+          var row1_unit_value = document.querySelector(".row1_unit").value;
+          var selection = document.querySelector(".row1_selection").value;
+          var gradeValue = Number(selection);
+          //Multiply row1_unit_value and gradeValue
+          var multiply = row1_unit_value * gradeValue;
+
+          //Row2
+          var row2_unit_value = document.querySelector(".row2_unit").value;
+          var selection2 = document.querySelector(".row2_selection").value;
+          var gradeValue2 = Number(selection2);
+          //Multiply in the same process
+          var multiply2 = row2_unit_value * gradeValue2;
+
+          //Row3
+          var row3_unit_value = document.querySelector(".row3_unit").value;
+          var selection3 = document.querySelector(".row3_selection").value;
+          var gradeValue3 = Number(selection3);
+          //Multiply in the same process
+          var multiply3 = row3_unit_value * gradeValue3;
+
+          //Row4
+          var row4_unit_value = document.querySelector(".row4_unit").value;
+          var selection4 = document.querySelector(".row4_selection").value;
+          var gradeValue4 = Number(selection4);
+          //Multiply in the same process
+          var multiply4 = row4_unit_value * gradeValue4;
+
+          //Row5
+          var row5_unit_value = document.querySelector(".row5_unit").value;
+          var selection5 = document.querySelector(".row5_selection").value;
+          var gradeValue5 = Number(selection5);
+          //Multiply in the same process
+          var multiply5 = row5_unit_value * gradeValue5;
+
+          //Row6
+          var row6_unit_value = document.querySelector(".row6_unit").value;
+          var selection6 = document.querySelector(".row6_selection").value;
+          var gradeValue6 = Number(selection6);
+          //Multiply in the same process
+          var multiply6 = row6_unit_value * gradeValue6;
+
+          //Row7
+          var row7_unit_value = document.querySelector(".row7_unit").value;
+          var selection7 = document.querySelector(".row7_selection").value;
+          var gradeValue7 = Number(selection7);
+          //Multiply in the same process
+          var multiply7 = row7_unit_value * gradeValue7;
+
+          //Row8
+          var row8_unit_value = document.querySelector(".row8_unit").value;
+          var selection8 = document.querySelector(".row8_selection").value;
+          var gradeValue8 = Number(selection8);
+          //Multiply in the same process
+          var multiply8 = row8_unit_value * gradeValue8;
+
+          //Row9
+          var row9_unit_value = document.querySelector(".row9_unit").value;
+          var selection9 = document.querySelector(".row9_selection").value;
+          var gradeValue9 = Number(selection9);
+          //Multiply in the same process
+          var multiply9 = row9_unit_value * gradeValue9;
+
+          //Row10
+          var row10_unit_value = document.querySelector(".row10_unit").value;
+          var selection10 = document.querySelector(".row10_selection").value;
+          var gradeValue10 = Number(selection10);
+          //Multiply in the same process
+          var multiply10 = row10_unit_value * gradeValue10;
+
+          //Row11
+          var row11_unit_value = document.querySelector(".row11_unit").value;
+          var selection11 = document.querySelector(".row11_selection").value;
+          var gradeValue11 = Number(selection11);
+          //Multiply in the same process
+          var multiply11 = row11_unit_value * gradeValue11;
+
+          //Row12
+          var row12_unit_value = document.querySelector(".row12_unit").value;
+          var selection12 = document.querySelector(".row12_selection").value;
+          var gradeValue12 = Number(selection12);
+          //Multiply in the same process
+          var multiply12 = row12_unit_value * gradeValue12;
+
+          //Row13
+          var row13_unit_value = document.querySelector(".row13_unit").value;
+          var selection13 = document.querySelector(".row13_selection").value;
+          var gradeValue13 = Number(selection13);
+          //Multiply in the same process
+          var multiply13 = row8_unit_value * gradeValue13;
+
+          //Row14
+          var row14_unit_value = document.querySelector(".row14_unit").value;
+          var selection14 = document.querySelector(".row14_selection").value;
+          var gradeValue14 = Number(selection14);
+          //Multiply in the same process
+          var multiply14 = row14_unit_value * gradeValue14;
+
+          //Row15
+          var row15_unit_value = document.querySelector(".row15_unit").value;
+          var selection15 = document.querySelector(".row15_selection").value;
+          var gradeValue15 = Number(selection15);
+          //Multiply in the same process
+          var multiply15 = row15_unit_value * gradeValue15;
+
+          //Row16
+          var row16_unit_value = document.querySelector(".row16_unit").value;
+          var selection16 = document.querySelector(".row16_selection").value;
+          var gradeValue16 = Number(selection16);
+          //Multiply in the same process
+          var multiply16 = row16_unit_value * gradeValue16;
+
+          //Row17
+          var row17_unit_value = document.querySelector(".row17_unit").value;
+          var selection17 = document.querySelector(".row17_selection").value;
+          var gradeValue17 = Number(selection17);
+          //Multiply in the same process
+          var multiply17 = row17_unit_value * gradeValue17;
+
+          //Row18
+          var row18_unit_value = document.querySelector(".row18_unit").value;
+          var selection18 = document.querySelector(".row18_selection").value;
+          var gradeValue18 = Number(selection18);
+          //Multiply in the same process
+          var multiply18 = row18_unit_value * gradeValue18;
+
+          //Row19
+          var row19_unit_value = document.querySelector(".row19_unit").value;
+          var selection19 = document.querySelector(".row19_selection").value;
+          var gradeValue19 = Number(selection19);
+          //Multiply in the same process
+          var multiply19 = row19_unit_value * gradeValue19;
+
+          //Row20
+          var row20_unit_value = document.querySelector(".row20_unit").value;
+          var selection20 = document.querySelector(".row20_selection").value;
+          var gradeValue20 = Number(selection20);
+          //Multiply in the same process
+          var multiply20 = row20_unit_value * gradeValue20;
+
+          //Row21
+          var row21_unit_value = document.querySelector(".row21_unit").value;
+          var selection21 = document.querySelector(".row21_selection").value;
+          var gradeValue21 = Number(selection21);
+          //Multiply in the same process
+          var multiply21 = row21_unit_value * gradeValue21;
+
+          //Row22
+          var row22_unit_value = document.querySelector(".row22_unit").value;
+          var selection22 = document.querySelector(".row22_selection").value;
+          var gradeValue22 = Number(selection22);
+          //Multiply in the same process
+          var multiply22 = row22_unit_value * gradeValue22;
+
+          //Row23
+          var row23_unit_value = document.querySelector(".row23_unit").value;
+          var selection23 = document.querySelector(".row23_selection").value;
+          var gradeValue23 = Number(selection23);
+          //Multiply in the same process
+          var multiply23 = row23_unit_value * gradeValue23;
+
+          //Row24
+          var row24_unit_value = document.querySelector(".row24_unit").value;
+          var selection24 = document.querySelector(".row24_selection").value;
+          var gradeValue24 = Number(selection24);
+          //Multiply in the same process
+          var multiply24 = row24_unit_value * gradeValue24;
+
+          //Row25
+          var row25_unit_value = document.querySelector(".row25_unit").value;
+          var selection25 = document.querySelector(".row25_selection").value;
+          var gradeValue25 = Number(selection25);
+          //Multiply in the same process
+          var multiply25 = row25_unit_value * gradeValue25;
+
+          //Row26
+          var row26_unit_value = document.querySelector(".row26_unit").value;
+          var selection26 = document.querySelector(".row26_selection").value;
+          var gradeValue26 = Number(selection26);
+          //Multiply in the same process
+          var multiply26 = row26_unit_value * gradeValue26;
+
+          //Row27
+          var row27_unit_value = document.querySelector(".row27_unit").value;
+          var selection27 = document.querySelector(".row27_selection").value;
+          var gradeValue27 = Number(selection27);
+          //Multiply in the same process
+          var multiply27 = row27_unit_value * gradeValue27;
+
+          //Row28
+          var row28_unit_value = document.querySelector(".row28_unit").value;
+          var selection28 = document.querySelector(".row28_selection").value;
+          var gradeValue28 = Number(selection28);
+          //Multiply in the same process
+          var multiply28 = row28_unit_value * gradeValue28;
+
+          //Row29
+          var row29_unit_value = document.querySelector(".row29_unit").value;
+          var selection29 = document.querySelector(".row29_selection").value;
+          var gradeValue29 = Number(selection29);
+          //Multiply in the same process
+          var multiply29 = row29_unit_value * gradeValue29;
+
+          //Row30
+          var row30_unit_value = document.querySelector(".row30_unit").value;
+          var selection30 = document.querySelector(".row30_selection").value;
+          var gradeValue30 = Number(selection30);
+          //Multiply in the same process
+          var multiply30 = row30_unit_value * gradeValue30;
+
+          //Numarator Totality
+          var NumTotal = multiply + multiply2 + multiply3 + multiply4 + multiply5 + multiply6 + multiply7 + multiply8 + multiply9 + multiply10 + multiply11 + multiply12 + multiply13 + multiply14 + multiply15 + multiply16 + multiply17 + multiply18 + multiply19 + multiply20 + multiply21 + multiply22 + multiply23 + multiply24 + multiply25 + multiply26 + multiply27 + multiply28 + multiply29 + multiply30
+
+          //Denominator Totality
+          var DenTotal = Number(row1_unit_value) + Number(row2_unit_value) + Number(row3_unit_value) + Number(row4_unit_value) + Number(row5_unit_value) + Number(row6_unit_value) + Number(row7_unit_value) + Number(row8_unit_value) + Number(row9_unit_value) + Number(row10_unit_value) + Number(row11_unit_value) + Number(row12_unit_value) + Number(row13_unit_value) + Number(row14_unit_value) + Number(row15_unit_value) + Number(row16_unit_value) + Number(row17_unit_value) + Number(row18_unit_value) + Number(row19_unit_value) + Number(row20_unit_value) + Number(row21_unit_value) + Number(row22_unit_value) + Number(row23_unit_value) + Number(row24_unit_value) + Number(row25_unit_value) + Number(row26_unit_value) + Number(row27_unit_value) + Number(row28_unit_value) + Number(row29_unit_value) + Number(row30_unit_value);
+
+          //Cumulative Grade Point Total
+          var read = NumTotal/DenTotal
+          var cgp = document.querySelector("#trial");
+          var totalPoints = document.getElementById("totalP");
+          var totalUnits = document.getElementById("totalU");
+          if(read>=4.5){
+            cgp.innerHTML = read.toFixed(2);
+            var exp = document.getElementById("explain");
+            exp.innerHTML = "First Class";
+            var adv = document.getElementById("advice");
+            adv.innerHTML = "Excellent";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+          else if(read<4.5 && read>=3.5){
+            cgp.innerHTML = read.toFixed(2);
+            var exp = document.getElementById("explain")
+            exp.innerHTML = "Second Class Upper"
+            var adv = document.getElementById("advice");
+            adv.innerHTML = "Very Good";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+          else if(read<3.5 && read>=2.5){
+            cgp.innerHTML = read.toFixed(2);
+            var exp = document.getElementById("explain")
+            exp.innerHTML = "Second Class Lower"
+            var adv = document.getElementById("advice");
+            adv.innerHTML = "Not Good";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+          else if(read<2.5 && read>=1.5){
+            cgp.innerHTML = read.toFixed(2);
+            var exp = document.getElementById("explain")
+            exp.innerHTML = "Third Class"
+            var adv = document.getElementById("advice");
+            adv.innerHTML = "Poor";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+          else if(read<1.5 && read>=1){
+            cgp.innerHTML = read.toFixed(2);
+            var exp = document.getElementById("explain")
+            exp.innerHTML = "Pass"
+            var adv = document.getElementById("advice");
+            adv.innerHTML = "Very poor";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+          else if(read<1){
+            cgp.innerHTML = read.toFixed(2);
+            var exp = document.getElementById("explain")
+            exp.innerHTML = "Fail"
+            var adv = document.getElementById("advice");
+            adv.innerHTML = "Very poor!";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+          else if(isNaN()){
+            cgp.innerHTML = "No value"
+            var exp = document.getElementById("explain")
+            exp.innerHTML = "No value";
+            totalPoints.innerHTML = NumTotal;
+            totalUnits.innerHTML = DenTotal;
+          }
+        })
+
+        //Theme
+
+        //Dark Mode
+        var togg = document.querySelector("#toggle");
+        togg.addEventListener("click", function(){
+          var embo = document.querySelector(".xx");
+          embo.style.backgroundColor = "rgb(45, 45, 104)";
+          var head = document.getElementById("header");
+          head.style.backgroundColor = "rgb(45, 45, 104)";
+          var body = document.getElementById("body");
+          body.style.backgroundColor = "rgb(45, 45, 104)";
+          var foot = document.getElementById("footer");
+          foot.style.backgroundColor = "rgb(45, 45, 104)";
+          var icon = document.getElementById("themeIcon");
+          icon.innerHTML = "&#xf185"
+          document.body.style.backgroundColor = "rgb(45, 45, 104)";
+        })
+
+        //Light Mode
+        var togg = document.querySelector("#toggle");
+        togg.addEventListener("dblclick", function(){
+          var embo = document.querySelector(".xx");
+          embo.style.backgroundColor = "aliceblue";
+          var head = document.getElementById("header");
+          head.style.backgroundColor = "white";
+          var body = document.getElementById("body");
+          body.style.backgroundColor = "white";
+          var foot = document.getElementById("footer");
+          foot.style.backgroundColor = "white";
+          var icon = document.getElementById("themeIcon");
+          icon.innerHTML = "&#xf186"
+          document.body.style.backgroundColor = "white";
+        })
+       </script>  
+</body>
+</html>

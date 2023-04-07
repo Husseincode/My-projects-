@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en-US" contenteditable="false" dir="ltr">
+         <head>
+                  <!--Character set Used-->
+                  <meta charset="UTF-8">
+                  <!--Local Bootstrap-->
+                  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+                  <!--Universal Bootstrap-->
+                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+                  <!--Description of the webpage-->
+                  <meta name="description" content="">
+                  <!--Author of a Page-->
+                  <meta name="author" content="">
+                  <!--Keywords for search engine(S.E.O)-->
+                  <meta name="keywords" content="">
+                  <!--Responsive on other devices-->
+                  <meta name="viewport"content="width=device-width, initial-scale=1"/>
+                  <!--Favicon-->
+                  <link rel="icon" href="" type="image/x-icon">
+                  <!--Styling the Page-->
+                  <style>
+                        /*Desktop View*/
+                        @media screen and (min-width:1024px){
+                           section{
+                                    width:40cm;
+                                    height: 50cm;
+                                    border: 2px solid aliceblue;
+                                    margin: 30px 0px 30px 30px;
+                                    border-radius: 20px;
+                                    background-color: aliceblue;
+                           }
+                           .firstdivision{
+                                    width:38.5cm;
+                                    height: 2cm;
+                                    margin: 20px 20px 20px 20px;
+                                    border-radius: 20px;
+                                    background-color: white;
+                           }
+                           .seconddivision{
+                                    width: 27.6;
+                                    height: 46cm;
+                                    margin: 20px 20px 20px 20px;
+                                    border-radius: 20px;
+                                    display: flex;
+                                    flex-direction: row;
+                           }
+                           .thirddivision{
+                                    width:7cm;
+                                    height: 45cm;
+                                    margin: 20px;
+                                    border-radius: 20px;
+                                    background-color: white;
+                           }
+                           .fourthdivision{
+                                    background-color: white;
+                           }
+                           .sub{
+                                    display: flex;
+                                    flex-direction: column;
+                                    width:7cm;
+                                    height: 45cm;
+                                    margin: 20px;
+                                    border-radius: 20px;
+                           }
+                           .nesteddiv{
+                                    margin: 10px;
+                                    border-radius: 20px;
+                                    height: 15cm;
+                           }
+                           .differentnesteddiv{
+                                    margin: 10px;
+                                    border-radius: 20px;
+                                    height: 9cm;
+                           }
+                           .categorize{
+                                    display: flex;
+                                    flex-direction: row;
+                           }
+                           .logo{
+                                    margin: 5px 0px 30px 0px;
+                                    width: 1.8cm;
+                                    height: 1.8cm;
+                           }
+                           .search{
+                                    margin: 15px 0px 30px 20px;   
+                           }
+                           .inp{
+                                    width: 10cm;
+                                    height: 1cm;
+                                    border-radius: 30px 0px 0px 30px;
+                                    border: hidden;
+                                    padding-left: 30px;
+
+                           }
+                           .subinp{
+                                    margin-left: -5px;
+                                    border: hidden;
+                                    border-radius: 0px 30px 30px 0px;
+                                    height: 1cm;
+                                    background-color: white;
+                                    border-left: transparent;
+                           }
+                           .label{
+                                    color: rgb(79, 133, 186);
+                                    font-size: 30px;
+                           }
+                           .item-1{
+                                    grid-area: item1;
+                           }
+                           .item-2{
+                                    grid-area: item2;
+                           }
+                           .item-3{
+                                    grid-area: item3;
+                           }
+                           .item-4{
+                                    grid-area: item4;
+                           }
+                           .grid-container{
+                                    display: grid;
+                                    margin: 20px 20px;
+                                    grid-template-areas: "item1 item1 item4" "item2 item3 item4";
+                                    gap: 10px;
+                           }
+                           .black{
+                                background-color: rgb(17, 17, 67);
+                           }
+                           .blac{
+                                background-color: rgb(28, 28, 97);
+                           }
+                           .kiss{
+                                background-color: rgb(45, 45, 104);
+                           }
+                           .lac{
+                                background-color: rgb(28, 28, 97);
+                           }
+                           .somr{
+                                display: flex;
+                                flex-direction:column;
+                                border-radius: 30px;
+                                
+                                height: 330px;
+                           }
+                           .binge:hover{
+                                background-color: dodgerblue;
+                                border-radius: 1px solid dodgerblue;
+                                transition: 1s;
+                                margin: 10px 0px 5px 10px;
+                                transition-delay: ease;
+                           }
+                           .binge{
+                                width: 5.9cm;
+                                height: 1cm;
+                                border-radius: 10px;
+                           }
+                           .twodynamite{
+                                background-color: rgb(240, 238, 238);
+                           }
+                           .lime{
+                                text-decoration: none;
+                                color: black;
+                           }
+                           .lime:hover{
+                                text-decoration: none;
+                                color: white;
+                                transition: 1s;
+                           }
+                        .switch{
+                                    position: relative;
+                                    display: inline-block;
+                                    width: 60px;
+                                    height: 30px;
+                                    margin-top: 7px;
+                           }
+                  /*Hide defaul HTML checkbox*/
+                  .switch input{
+                           opacity: 0;
+                           width: 0;
+                           height: 0;
+                  }
+                  .slider{
+                           position: absolute;
+                           cursor: pointer;
+                           top:0;
+                           left:0;
+                           right:0;
+                           bottom:0;
+                           background-color: #ccc;
+                           -webkit-transition: .4s;
+                           transition: .4s;
+                  }
+                  .slider:before{
+                           position: absolute;
+                           content: "";
+                           height: 22px;
+                           width: 26px;
+                           left: 4px;
+                           background-color: white;
+                           -webkit-transition: .4s;
+                           transition: .4s;
+                           margin-top: 5px;
+                  }
+                  input:checked+.slider{
+                           background-color: #2196F3;
+                  }
+                  input:focus+.slider{
+                           box-shadow: 0 0 1px #2196F3;
+                  }
+                  input:checked+.slider:before{
+                           -webkit-transform: translateX(26px);
+                           -ms-transform: translateX(26px);
+                           transform: translateX(26px);
+                  }
+                  /*Rounded Sliders*/
+                  .slider.round{
+                           border-radius: 34px;
+                  }
+                  .slider.round:before{
+                           border-radius: 50%;
+                  }
+                  .town{
+                        display: flex;
+                        flex-direction:column;
+                        border-radius: 30px;
+                        height: 400px;
+                        margin-top: 30px;
+                  }
+                  .whitney{
+                        color: white;
+                  }
+                  .whitney:hover{
+                        text-decoration: none;
+                  }
+                  #pages{
+                        color: grey;
+                  }
+                  .try{
+                        background-color: rgb(240, 238, 238);
+                        border: 1px solid white
+                  }
+                  .colorni{
+                        text-decoration: none;
+                        color: black;
+                  }
+                  .prague{
+                        text-decoration: none;
+                        color: black;
+                  }
+                  .prague:hover{
+                        text-decoration: none;
+                        color: black;
+                  }
+                  .lao{
+                        background-color: rgb(240, 238, 238);
+                  }
+                  .duck{
+                        color:gray;
+                  }
+                  .poin{
+                        cursor: pointer;
+                  }
+                  body{
+                        display: flex;
+                        justify-content: center;
+                  }
+                }
+                /*End Styling*/
+                  </style>
+         </head>
+         <body>
+                  <section id="darkmode">
+                           <!--first bar menu with facebook logo-->
+                           <div id="dark" class="firstdivision">
+                                    <!--displaying in flex-->
+                                    <div class="categorize">
+                                             <div style="display: flex;margin-left: 10px;">
+                                             <!--facebook logo-->
+                                             <a href="https://www.facebook.com"><img alt="F-logo" class="logo" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-circle-512.png"/></a>
+                                             </span>
+                                             <!--Search-->
+                                             <span class="search">
+                                                      <form action="#sample.php" method="get">
+                                                               <input id="search" class="inp shadow" type="text" placeholder="Search"/>
+                                                               <button id="sech" class="shadow subinp" onclick="">
+                                                                        <a href="www.facebook.com" id="dat" class="fa fa-search prague"></a>
+                                                               </button>
+                                                      </form>
+                                             </span>
+                                             </div>
+                                             <!--icons-->
+                                             <div class="search" style="display:flex;">
+                                                      <!--homepage icon-->
+                                                      <a title="Homepage" target="_self" href="https://m.facebook.com/?_rdr"><i style="margin-left: 60px;" class="fa fa-home label"></i></a>
+                                                      <!--friend user icon-->
+                                                      <a title="Friend Requests" target="_self" href="https://mobile.facebook.com/friends/center/requests/?eav=AfYCP6sUzFJqIOljYf57SEAbRnMRDa4AwjH9l1qdPoPRvPG3gP9YgUWbBhWUheSd8gE&paipv=0&rfj"><i style="margin-left: 60px;color: rgb(79, 133, 186);font-size: 30px;" class="fa fa-user"></i></a>
+                                                      <!--Video recoder icon-->
+                                                      <a title="Videos" target="_self" href="https://mobile.facebook.com/watch/?paipv=0&eav=AfZKNDr-Z-FwNxsc_mEa77MQ36r_mojaFXnxbOk9sbj63tqJv8_fKpzPSkCyH7ul1rg"><i style="margin-left: 60px;" class="fa fa-video-camera label"></i></a>
+                                                      <!--Game pad icon-->
+                                                      <a title="Gaming" target="_self" href="https://mobile.facebook.com/nt/?id=gaming%3Flogging_data%255Bentrypoint%255D%3Dgame_bookmark&source=bookmarks&paipv=0&eav=AfalH_5PkKhxGFMXW4HAioIKRS_ilI-kQHpWAD5Brce9o6x1QJ6TNMYW8T_WtcN8DlE&_rdc=1&_rdr"><i style="margin-left: 60px;" class="fa fa-gamepad label"></i></a>
+                                             </div>
+                                             <!--icons 2-->
+                                             <div class="search" style="display:flex;margin-left: 70px;">
+                                                      <!--post icon-->
+                                                      <a title="Post Something" target="_self" href="https://mobile.facebook.com/abayomi.akanji.167/photos?lst=100038624051363%3A100038624051363%3A1664917701&eav=Afa4eO59bW-qSXSD5IRtkaZnQwG60FvOhI_bVAjYIZ4reP6yVnUuCT24NpTRbLuNrmA&paipv=0"><i style="margin-left: 60px;" class="fa fa-plus label"></i></a>
+                                                      <!--messenger icon-->
+                                                      <a title="Messenger" target="_self" href="https://mobile.facebook.com/friends/center/friends/?fb_ref=fbm&eav=AfYKCMnpEedMt3YgwBOa9PjYiEQ3ZbD5DMrY4FnZELP_g4dUIJ0x3nR1V7OAycV7gdA&paipv=0"><i style="margin-left: 60px;color: rgb(79, 133, 186);font-size: 30px;" class="fa fa-comment"></i></a>
+                                                      <!--notification bell icon-->
+                                                      <a title="notifications" target="_self" href="https://mobile.facebook.com/notifications.php?eav=AfYsJqRLk2UiXKTqeLm0psy3w-lr6OkZwAvnkJrzxYYX0ApodtbLUc0ExdZSKSTMtWQ&paipv=0"><i style="margin-left: 60px;" class="fa fa-bell label"></i></a>
+                                                      <!--Image displayer-->
+                                                      <img id="reflect" src="https://i2.wp.com/www.99inspiration.com/wp-content/uploads/2015/08/Female-portrait-photography.jpg?resize=600%2C850&ssl=1" style="margin-left: 120px;width:1.5cm;height: 1.5cm;border-radius: 50%;border: 1px solid lightgray;"/>
+                                                      <i title="Click on the white icon on the folder" style="position: relative;left:20px;top:10px" class="fa fa-folder label poin"></i>
+                                                      <input style="width: 0.3cm;height:0.3cm;border-radius: 50%;color: dodgerblue;margin-top: 20px;z-index:1;" id="img1" type="file" onchange="changeImage()"/>
+                                             </div>
+                                    </div>
+                           </div>
+                           <!--End-->
+                           <!--Embodiment of three different sectors aligned in flex terms-->
+                           <div class="seconddivision">
+                                    <!--First Sector-->
+                                    <div id="berry" class="thirddivision">
+                                             <div style="display: flex;">
+                                                      <img src="https://i2.wp.com/www.99inspiration.com/wp-content/uploads/2015/08/Female-portrait-photography.jpg?resize=600%2C850&ssl=1" style="border: 1px solid lightgray;width:1.5cm;height: 1.5cm;border-radius: 50%;margin: 20px 0px 0px 20px;" id="dimension"/>
+                                                      <h6 id="changed" style="font-weight:bold;width:1.5cm;height: 1.5cm;border-radius: 50%;margin:35px 0px 0px 10px;">Username</h6>
+                                                      <button title="Click to fill in name" style="background-color: transparent;border: none;outline: none;margin-left: 50px;" onclick="manipulate()">
+                                                        <i style="color: rgb(79, 133, 186);font-size: 20px;" class="fa fa-plus btn"></i>
+                                                     </button>
+                                             </div>
+                                             <div style="margin:20px 0px 10px 20px">
+                                                      <h6 id="pages" style="font-weight: bold;margin-left: 10px;">PAGES</h6>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                        <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:1cm;height: 1cm;border-radius: 7px;"/>
+                                                               </span>
+                                                               <p id="messenger" style="margin-top: 15px;cursor: pointer;">Messenger</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                        <img src="https://i.pinimg.com/originals/ff/0e/20/ff0e20de4718fe14cdd256c81c5db771.png" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;"/>
+                                                               </span>
+                                                               <p id="instagram" style="margin-top: 15px;cursor: pointer;">Instagram</p>
+                                                      </span>
+                                                      <button id="elem" onclick="increaseHeight()" class="shadow btn fourthdivision" type="button" style="color: rgb(67, 105, 143);font-weight:bold;border-radius: 30px;width: 6cm;height: 1cm;margin-top: 20px;" value="See more">
+                                                               <p id="pelem">See More</p>
+                                                               <div id="getme" style="display:none;">
+                                                                <div style="display: grid;">
+                                                                <span>
+                                                                        <span style="display: flex;">
+                                                                                <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                                         <img src="http://speedyclearance.uk/wp-content/uploads/2018/04/whatsapp-icon.png" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;"/>
+                                                                                </span>
+                                                                                <p style="color: grey;margin-top: 15px;cursor: pointer;">Whatsapp</p>
+                                                                       </span>
+                                                                       <span style="display: flex;">
+                                                                        <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                                 <img src="https://pnggrid.com/wp-content/uploads/2021/04/telegram-logo-circle-1536x1536.png" style="width:0.8cm;height: 0.8cm;margin-top: 2px;margin-left: 2px;"/>
+                                                                        </span>
+                                                                        <p style="color: grey;margin-top: 15px;cursor: pointer;">Telegram</p>
+                                                                       </span>
+                                                                      <span style="display: flex;">
+                                                                      <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                         <img src="https://logos-download.com/wp-content/uploads/2016/07/Snapchat_logo.png" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;"/>
+                                                                      </span>
+                                                                      <p style="color: grey;margin-top: 15px;cursor: pointer;">Snapchat</p>
+                                                                      </span>
+                                                                      <span style="display: flex;">
+                                                                        <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                                 <img src="https://www.mtn.com/wp-content/uploads/2019/11/Ayoba-Final-icon.png?fit=2269%2C2268" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;"/>
+                                                                        </span>
+                                                                        <p style="color: grey;margin-top: 15px;cursor: pointer;">Ayoba</p>
+                                                               </span>
+                                                                </span><br/>
+                                                                </div>
+                                                               </div> 
+                                                      </button>
+                                                      <button id="hi" onclick="decreaseHeight()" class="shadow btn fourthdivision" style="color: rgb(67, 105, 143);font-weight:bold;border-radius: 30px;width: 6cm;height: 1cm;display: none;">See Less</button>
+                                             </div>
+                                             <div style="margin:50px 0px 10px 20px">
+                                                      <h6 style="font-weight: bold;color: grey;margin-left: 10px;">GROUPS</h6>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;" class="card shadow">
+                                                                        <img src="https://graphicsfamily.com/wp-content/uploads/edd/2020/11/Free-Typography-Logo-Design-GraphicsFamily-2048x1152.jpg" style="width:1cm;height:1cm;border-radius: 5px;"/>
+                                                               </span>
+                                                               <p id="pa" style="margin-top: 15px;cursor: pointer;">Graphics Design</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;" class="card shadow">
+                                                                        <img src="https://live.staticflickr.com/4630/28295332539_4f9823be7e_b.jpg" style="width:1cm;height: 1cm;border-radius: 5px;"/>
+                                                               </span>
+                                                               <p id="pa2" style="margin-top: 15px;cursor: pointer;">Website Design</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 5px;" class="card shadow">
+                                                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/e4a757106842361.5f99428d1aedd.jpg" style="width:1cm;height: 1cm;border-radius: 5px;"/>
+                                                               </span>
+                                                               <p id="pa3" style="margin-top: 15px;cursor: pointer;">ZED.zahidul</p>
+                                                      </span>
+                                                      <button id="elem2" onclick="increaseHeight2()" class="shadow btn fourthdivision" type="button" style="color: rgb(67, 105, 143);font-weight:bold;border-radius: 30px;width: 6cm;height: 1cm;margin-top: 20px;" value="See more">
+                                                        <p id="pelem2">See More</p>
+                                                        <div id="getme2" style="display:none;">
+                                                                <div style="display: grid;">
+                                                                <span>
+                                                                        <span style="display: flex;">
+                                                                                <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                                         <img src="https://www.designbolts.com/wp-content/uploads/2016/10/Fitness-App-Logo-Design.jpg" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;border-radius: 10px;"/>
+                                                                                </span>
+                                                                                <p style="color: grey;margin-top: 15px;cursor: pointer;">Application Design</p>
+                                                                       </span>
+                                                                       <span style="display: flex;">
+                                                                        <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                                 <img src="https://vignette.wikia.nocookie.net/anthemgame/images/b/b7/Freelancer_Logo.png/revision/latest?cb=20200422070218" style="width:0.8cm;height: 0.8cm;margin-top: 2px;margin-left: 2px;"/>
+                                                                        </span>
+                                                                        <p style="color: grey;margin-top: 15px;cursor: pointer;">Free Lancing</p>
+                                                                       </span>
+                                                                      <span style="display: flex;">
+                                                                      <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                         <img src="https://cdn.dribbble.com/users/725831/screenshots/3251631/__________-2.png" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;border-radius: 10px;"/>
+                                                                      </span>
+                                                                      <p style="color: grey;margin-top: 15px;cursor: pointer;">Coding</p>
+                                                                      </span>
+                                                                </span><br/>
+                                                                </div>
+                                                               </div> 
+                                                      </button>
+                                                      <button id="hi2" onclick="decreaseHeight2()" class="shadow btn fourthdivision" style="color: rgb(67, 105, 143);font-weight:bold;border-radius: 30px;width: 6cm;height: 1cm;display: none;">See Less</button>
+                                             </div>
+                                             <div style="margin:50px 0px 10px 20px">
+                                                      <h6 style="font-weight: bold;color: grey;margin-left: 10px;">GAMES</h6>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 5px;" class="card shadow">
+                                                                  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/08/facebook-gaming-logo.jpg" style="width:1cm;height: 1cm;border-radius: 5px;"/>
+                                                               </span>
+                                                               <p id="pa4" style="margin-top: 15px;cursor: pointer;">Facebook Games</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 5px;" class="card shadow">
+                                                                        <img src="https://i.pinimg.com/originals/3d/a5/af/3da5afffc0b6bb0f3c0cd30bb937d0d6.png" style="width:1cm;height: 1cm;border-radius: 5px;"/>
+                                                               </span>
+                                                               <p id="pa5" style="margin-top: 15px;cursor: pointer;">Free Play Games</p>
+                                                      </span>
+                                                      <button id="elem3" onclick="increaseHeight3()" class="shadow btn fourthdivision" type="button" style="color: rgb(67, 105, 143);font-weight:bold;border-radius: 30px;width: 6cm;height: 1cm;margin-top: 20px;" value="See more">
+                                                        <p id="pelem3">See More</p>
+                                                        <div id="getme3" style="display:none;">
+                                                         <div style="display: grid;">
+                                                         <span>
+                                                                 <span style="display: flex;">
+                                                                         <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                                  <img src="https://download.cnet.com/a/img/catalog/2019/02/28/796bc648-9a9e-48a8-a1d1-4eba9e4299cc/imgingest-1840916640336399187.png" style="width:0.8cm;height: 0.8cm;margin-left: 2px;margin-top: 2px;"/>
+                                                                         </span>
+                                                                         <p style="color: grey;margin-top: 15px;cursor: pointer;">Google Play Store</p>
+                                                                </span>
+                                                                <span style="display: flex;">
+                                                                 <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 10px;" class="card shadow">
+                                                                          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/softwaretechnologies/appstore/featured-content-appstore-icon_2x.png" style="width:0.8cm;height: 0.8cm;margin-top: 2px;margin-left: 2px;"/>
+                                                                 </span>
+                                                                 <p style="color: grey;margin-top: 15px;cursor: pointer;">Apple Store</p>
+                                                                </span>
+                                                         </span><br/>
+                                                         </div>
+                                                        </div> 
+                                               </button>
+                                               <button id="hi3" onclick="decreaseHeight3()" class="shadow btn fourthdivision" style="color: rgb(67, 105, 143);font-weight:bold;border-radius: 30px;width: 6cm;height: 1cm;display: none;">See Less</button>
+                                             </div>
+                                             <div style="margin:50px 0px 10px 20px">
+                                                      <h6 style="font-weight: bold;color: grey;margin-left: 10px;">EXPLORE</h6>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 50%;" class="card shadow">
+                                                                        <i class="fa fa-user" style="width:1cm;height:1cm;font-size: 25px;color: rgb(67, 105, 143);padding: 5px 0px 0px 9px;"></i>
+                                                               </span>
+                                                               <p style="color: rgb(67, 105, 143);margin-top: 15px;font-weight: bold;cursor: pointer;">Groups</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 50%;" class="card shadow">
+                                                                        <i class="fa fa-star" style="width:1cm;height:1cm;font-size: 20px;color: rgb(67, 105, 143);padding: 10px 0px 0px 9px;"></i>
+                                                               </span>
+                                                               <p style="color: rgb(67, 105, 143);margin-top: 15px;font-weight: bold;cursor: pointer;">Favorites</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 50%;" class="card shadow">
+                                                                <i class="fa fa-save" style="width:1cm;height:1cm;font-size: 20px;color: rgb(67, 105, 143);padding: 9px 0px 0px 9px;"></i>
+                                                               </span>
+                                                               <p style="color: rgb(67, 105, 143);margin-top: 15px;font-weight: bold;cursor: pointer;">Saves</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                               <span style="margin: 10px;width: 1cm;height: 1cm;border-radius: 50%;" class="card shadow">
+                                                                <i class="fa fa-clock-o" style="width:1cm;height:1cm;font-size: 25px;color: rgb(67, 105, 143);padding: 5px 0px 0px 8px;"></i>
+                                                               </span>
+                                                               <p style="color: rgb(67, 105, 143);margin-top: 15px;font-weight: bold;cursor: pointer;">Events</p>
+                                                      </span>
+                                                      <span style="display: flex;">
+                                                                        <!--Rounded Switch-->
+                                                                       <label class="switch">
+                                                                       <input onclick="changeColor()" type="checkbox"/>
+                                                                       <span class="slider round"></span>
+                                                                       </label>
+                                                               <p style="color: rgb(67, 105, 143);margin-top: 10px;font-weight: bold;cursor: pointer;margin-left: 10px;">Apply Dark Theme</p>
+                                                      </span>
+                                             </div>
+                                    </div>
+                                    <!--Second Sector-->
+                                    <div style="width:22cm;height: 45cm;margin: 20px;border-radius: 30px;" class="">
+                                             <!--Embodment of three different sectors-->
+                                             <div id="jane" class="somr camel fourthdivision">
+                                                      <div style="margin: 10px 0px 0px 20px;">
+                                                               <h4 style="color: dodgerblue;font-weight: bold;">Stories</h4>
+                                                      </div><br/>
+                                                      <div style="display: flex;flex-direction:row;margin: 20px 0px 0px 20px;">
+                                                               <div style="width:5cm;height: 6cm;border-radius: 30px;background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e016f946898009.58d1dd947a21f.jpg);background-size: cover;" class="shadow">
+                                                                        <span style="margin: 10px;width: 1.5cm;height: 1.5cm;border-radius: 50%;border: 2px solid dodgerblue;z-index: 1;margin-left: 50px;position: relative;bottom:30px" class="card shadow">
+                                                                                 <img src="https://prestigeportraits.com/wp-content/themes/prestige/assets/build/images/galleries/gallery-2/gallery-image-3.jpg" style="width:1.4cm;height: 1.4cm;border-radius: 50%;"/>
+                                                                        </span>
+                                                               </div>
+                                                               <div style="width:5cm;height: 6cm;border-radius: 30px;margin-left: 10px;background-image: url(https://blog.phowd.com/wp-content/uploads/2014/09/portrait-photography.jpg);background-size: cover;" class="shadow">
+                                                                        <span style="margin: 10px;width: 1.5cm;height: 1.5cm;border-radius: 50%;border: 2px solid dodgerblue;z-index: 1;margin-left: 50px;position: relative;bottom:30px" class="card shadow">
+                                                                                <img src="https://www.alessandromichelazzi.com/wp-content/uploads/2018/10/OnePlus6t-portrait-mode-samples-8.jpg" style="width:1.4cm;height: 1.4cm;border-radius: 50%;"/>
+                                                                        </span>
+                                                               </div>
+                                                               <div style="width:5cm;height: 6cm;border-radius: 30px;margin-left: 10px;background-image: url(https://fancyfantacy.com/wp-content/uploads/2020/03/Fancy-and-Creative-Portrait-Photo-Ideas-You-Must-Have-12.jpg);background-size: cover;" class="shadow">
+                                                                        <span style="margin: 10px;width: 1.5cm;height: 1.5cm;border-radius: 50%;border: 2px solid dodgerblue;z-index: 1;margin-left: 50px;position: relative;bottom:30px" class="card shadow">
+                                                                                <img src="http://www.mmaler.com/wp-content/uploads/2018/10/006-madison-ct-senior-portraits-maler-photography.jpg" style="width:1.4cm;height: 1.4cm;border-radius: 50%;"/>
+                                                                        </span>
+                                                               </div>
+                                                               <div style="width:5cm;height: 6cm;border-radius: 30px;margin-left: 10px;background-image: url(https://bidunart.com/wp-content/uploads/2020/08/Femaleportraits233a.jpg);background-size: cover;" class="shadow">
+                                                                        <span style="margin: 10px;width: 1.5cm;height: 1.5cm;border-radius: 50%;border: 2px solid dodgerblue;z-index: 1;margin-left: 50px;position: relative;bottom:30px" class="card shadow">
+                                                                                <img src="https://freckledflower.com/wp-content/uploads/2018/03/Red-Head-Portraits.jpg" style="width:1.4cm;height: 1.4cm;border-radius: 50%;"/>
+                                                                        </span>
+                                                               </div>
+                                                               <div style="width:5cm;height: 6cm;border-radius: 30px;margin-left: 10px;margin-right: 20px;background-image: url(https://i2.wp.com/fashionablymale.net/wp-content/uploads/2016/12/david-koch-by-maria-maximovna8.jpg?resize=640%2C960&ssl=1);background-size: cover;" class="shadow">
+                                                                        <span style="margin: 10px;width: 1.5cm;height: 1.5cm;border-radius: 50%;border: 2px solid dodgerblue;z-index: 1;margin-left: 50px;position: relative;bottom:30px" class="card shadow">
+                                                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4123c654581075.5961518080782.jpg" style="width:1.4cm;height: 1.4cm;border-radius: 50%;"/>
+                                                                        </span>
+                                                               </div>
+                                                      </div>
+                                             </div>
+                                             <div id="magma" class="town fourthdivision">
+                                                      <div style="margin: 10px 0px 0px 20px;">
+                                                               <h4 style="color: dodgerblue;font-weight: bold;">Create Post</h4>
+                                                      </div>
+                                                      <div style="margin: 0px 0px 0px 20px;">
+                                                               <span style="width: 1.5cm;height: 1.5cm;border-radius: 50%;z-index: 1;margin-left: 20px;position: relative;top:120px" class="card shadow">
+                                                                        <img id="face" src="https://i2.wp.com/www.99inspiration.com/wp-content/uploads/2015/08/Female-portrait-photography.jpg?resize=600%2C850&ssl" style="width:1.5cm;height: 1.5cm;border-radius: 50%;"/>
+                                                               </span>
+                                                               <textarea disabled id="over" class="try" placeholder="Whats on your mind..." style="display: flex;width: 21cm;height:5cm;border-radius: 30px;padding: 70px 0px 0px 90px;">
+                                                               </textarea>
+                                                      </div>
+                                                      <div style="display: flex;flex-direction:row;margin: 40px 0px 0px 20px;">
+                                                               <span style="display: flex;width:3cm;background-color: rgb(248, 192, 192);border-radius: 30px;">
+                                                                        <i class="fa fa-camera" style="color: white;font-size: 20px;padding-left: 10px;padding-top: 3px;background-color: palevioletred;margin: 5px 0px 5px 10px;border-radius: 10px;height: 0.7cm;width: 1cm;"></i>
+                                                                        <p style="padding-left: 5px;padding-top:5px;font-weight:bold;height:0.5cm;">
+                                                                                <a href="https://mobile.facebook.com/abayomi.akanji.167?eav=AfbdXxwdfRq8UssUWMGh5Rx7uQj4AV9Wwls0eoDwQlNrCiwboCgPgJxnmGTXeMCZ9Vw&paipv=0#" class="poin lime">Gallery</a>
+                                                                        </p>
+                                                               </span>
+                                                               <span style="display: flex;width:3cm;background-color: rgb(161, 199, 237);border-radius: 30px;margin-left: 10px;">
+                                                                        <i style="color: white;font-size: 20px;padding-left: 10px;padding-top: 5px;background-color: blue;margin: 5px 0px 5px 10px;border-radius: 10px;height: 0.7cm;width: 1cm;" class="fa fa-video-camera"></i>
+                                                                        <p style="font-weight:bold;height:0.5cm;padding-top: 5px;margin-left: 10px;">
+                                                                                <a href="https://mobile.facebook.com/abayomi.akanji.167?eav=AfbdXxwdfRq8UssUWMGh5Rx7uQj4AV9Wwls0eoDwQlNrCiwboCgPgJxnmGTXeMCZ9Vw&paipv=0#" class="poin lime">Video</a>
+                                                                        </p>
+                                                               </span>
+                                                               <span style="display: flex;width:4cm;background-color: rgb(164, 237, 164);border-radius: 30px;margin-left: 10px;">
+                                                                        <i class="fa fa-map-marker" style="color: white;font-size: 20px;padding-left: 10px;padding-top: 5px;background-color:chartreuse;margin: 5px 0px 5px 10px;border-radius: 10px;height: 0.7cm;width: 1cm;"></i>
+                                                                        <p style="padding-left: 10px;padding-top:5px;font-weight:bold;height:0.5cm;">
+                                                                                <a href="https://mobile.facebook.com/abayomi.akanji.167?eav=AfbdXxwdfRq8UssUWMGh5Rx7uQj4AV9Wwls0eoDwQlNrCiwboCgPgJxnmGTXeMCZ9Vw&paipv=0#" class="poin lime">Location</a>
+                                                                        </p>
+                                                               </span>
+                                                               <span style="display: flex;width:3cm;background-color:rgb(164, 255, 255);border-radius: 30px;margin-left: 10px;">
+                                                                        <i class="fa fa-gift" style="color: white;font-size: 20px;padding-left: 10px;padding-top: 5px;background-color:cyan;margin: 5px 0px 5px 10px;border-radius: 10px;height: 0.7cm;width: 1cm;"></i>
+                                                                        <p style="padding-left: 10px;padding-top:5px;font-weight:bold;height:0.5cm;">
+                                                                                <a href="https://www.facebook.com" class="poin lime">Gift</a>
+                                                                        </p>
+                                                               </span>
+                                                               <span style="display: flex;width:5cm;background-color:rgb(247, 230, 137);border-radius: 30px;margin-left: 10px;">
+                                                                        <i class="fa fa-smile-o" style="color: white;font-size: 20px;padding-left: 10px;padding-top: 5px;background-color:gold;margin: 5px 0px 5px 10px;border-radius: 10px;height: 0.7cm;width: 1cm;"></i>
+                                                                        <p style="padding-left: 10px;padding-top:5px;font-weight:bold;height:0.5cm;">
+                                                                                <a href="https://mobile.facebook.com/abayomi.akanji.167?eav=AfbdXxwdfRq8UssUWMGh5Rx7uQj4AV9Wwls0eoDwQlNrCiwboCgPgJxnmGTXeMCZ9Vw&paipv=0#" class="poin lime">Feeling/Activity</a>
+                                                                        </p>
+                                                               </span>
+                                                      </div>
+                                             </div>
+                                             <div id="town" class="fourthdivision" style="display: flex;flex-direction:column;border-radius: 30px;height: 850px;margin-top: 30px;">
+                                                      <div style="display:flex;flex-direction:row;margin: 40px 0px 0px 20px;">
+                                                               <a id="popular" href="#" class="colorni" style="text-decoration: none;">
+                                                                        <span style="font-weight: bold;font-size:15px;border-bottom: 3px solid dodgerblue;" >POPULAR</span>
+                                                               </a>
+                                                               <a id="cappy" class="duck" href="#" style="text-decoration: none;">
+                                                                        <span style="font-weight: bold;font-size:15px;margin-left: 10px;">RECENT</span>
+                                                               </a>
+                                                               <a id="zappy" class="duck" href="#" style="text-decoration: none;">
+                                                                        <span style="font-weight: bold;font-size:15px;margin-left: 10px;" >MOST VIEW</span>
+                                                               </a>
+                                                      </div>
+                                                      <hr style="border:2px solid lightgray;margin-left: 20px;margin-right: 20px;margin-top: 5px;"/>
+                                                      <div style="display: flex;">
+                                                               <span style="width: 1.5cm;height: 1.5cm;border-radius: 50%;z-index: 1;margin-left: 20px;" class="card">
+                                                                        <img id="face" src="https://prestigeportraits.com/wp-content/themes/prestige/assets/build/images/galleries/gallery-2/gallery-image-3.jpg" style="width:1.5cm;height: 1.5cm;border-radius: 50%;"/>
+                                                               </span>
+                                                               <span style="margin-left: 15px;display: grid;">
+                                                               <span style="margin-top: 15px;">
+                                                                        <span style="font-weight:bold;font-size:15px;" id="">
+                                                                                 <a id="ahmad" href="#" class="colorni">Mohammed Arham</a>
+                                                                        </span>
+                                                                        <span style="color:gray;font-size: 13px;" id="">&nbsp;.2 hours ago</span>
+                                                               </span>
+                                                                        <time style="color:gray;font-size: 13px;" id="">02 March at 12:55 PM</time>
+                                                               </span>
+                                                      </div>
+                                                      <div>
+                                                               <p style="color:gray;font-size: 17px;margin: 30px 20px;" id="">
+                                                                        Hello Everyone Thanks for Watching Please SUBSCRIBE My Channel-Like Comments and Share <a href="https://www.youtube.com/channel/UCHhGX-DD7A8jq7J_NPGN6gA">https://www.youtube.com/channel/UCHhGX-DD7A8jq7J_NPGN6gA</a>   
+                                                               </p>
+                                                               <div class="grid-container">
+                                                                        <img class="grid-item item-1" src="https://www.wallpapertip.com/wmimgs/233-2330553_1080p-animated-wallpaper.jpg" style="width: 13cm;height: 5cm;border-radius: 20px;"/>
+                                                                        <img class="grid-item item-2" src="https://wallpapercave.com/wp/wp7039357.jpg" style="width: 6.3cm;height: 4cm;border-radius: 20px;"/>
+                                                                        <img class="grid-item item-3" src="https://www.desktopanimated.com/wp-content/uploads/2014/10/Magic_Sunset_1.jpg" style="width: 6.3cm;height: 4cm;border-radius: 20px;"/>
+                                                                        <img class="grid-item item-4" src="https://wallpapercave.com/wp/wp6560767.jpg" style="width: 7.5cm;height: 9.2cm;border-radius: 20px;"/>
+                                                               </div>
+                                                               <div style="font-size: 13px;margin: 30px 20px;display: flex;flex-direction: row;">
+                                                                        <p>
+                                                                                 <span style="width: 2cm;height:2cm;background-color:red;border-radius: 50%;">
+                                                                                        <a title="Unlike" href="Javascript:subtract(-1)"><i style="color: white;margin-left: 2px;" class="fa fa-heart"></i></a>
+                                                                                 </span>
+                                                                                 <span style="width: 2cm;height:2cm;background-color:dodgerblue;border-radius: 50%;z-index: 1;position: relative;right:5px">
+                                                                                        <a title="Like" href="Javascript:add(+1)"><i style="color: white;margin-left: 2px;" class="fa fa-thumbs-up"></i></a>
+                                                                                 </span>
+                                                                                 <span class="duck" id="set" style="margin-left: 5px;">22 Likes</span>
+                                                                        </p>
+                                                                        <p id="standard" style="margin-left: 10px;">
+                                                                                 <a class="poin" title="Comment on Post" onclick="comment()"><i id="air" style="font-size: 15px;" class="fa fa-comment duck"></i></a>
+                                                                                 <spa id="water" class="duck">544 Comments</span>
+                                                                        </p>
+                                                                        <p style="margin-left: 10px;">
+                                                                                 <a href="#"><i id="fire" style="font-size: 15px;" class="fa fa-share duck"></i></a>
+                                                                                 <span class="duck" id="earth">126 Share</span>
+                                                                        </p>
+                                                               </div>
+                                                      </div>
+                                                      <div>
+                                                        <textarea disabled id="in" class="try" style="width: 21.5cm;height:3cm;border-radius: 30px;padding: 10px 0px 0px 20px;margin-left: 10px;display: none;">
+                                                        </textarea>
+                                                      </div>
+                                             </div>
+                                             <!--End Embodiment-->
+                                    </div>
+                                    <!--Third Sector-->
+                                    <div class="sub">
+                                             <!--Embodiment of two sectors-->
+                                             <div id="foster" style="display: flex;flex-direction:column;border-radius: 30px;" class="nesteddiv fourthdivision">
+                                                      <div style="margin: 20px 10px 0px 10px;">
+                                                      <span style="display: flex;justify-content: space-between;">
+                                                      <h6 style="font-weight: bold;color:dodgerblue;">Upcoming Events</h6>
+                                                      <p><a id="favor" href="#" class="duck" style="text-decoration: none;font-weight:bold;font-size:13px;margin-right: 5px;">see all</a></p>
+                                                      </span>
+                                                      </div>
+                                                      <div style="margin: 10px 0px 0px 10px;">
+                                                               <img style="width: 5.9cm;height:5cm;border-radius:10px;" src="https://lp-cms-production.imgix.net/2020-11/shutterstockRF_259501811.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=35&dpr=3"/>
+                                                      </div>
+                                                      <div style="margin: 20px 0px 0px 10px;">
+                                                               <div style="display: flex;">
+                                                               <span id="end" style="width:1.5cm;height:1.5cm;display: grid;border-radius: 10px;" class="card shadow">
+                                                                        <time id="date" style="font-size: 18px;margin-left: 15px;font-weight: bold;color: dodgerblue;">21</time>
+                                                                        <time id="month" style="font-size: 18px;margin-left: 5px;font-weight: bold;overflow: hidden;">JULY</time>
+                                                               </span>
+                                                               <span style="margin-left: 10px;">
+                                                               <span id="america" style="font-weight: bold;font-size:13px;margin-top: 10px;">United States of America</span><br/>
+                                                               <span id="york" class="duck" style="font-size:11px;padding-bottom: 0px;">New York city</span>
+                                                               </span>
+                                                               </div>
+                                                      </div>
+                                                      <div style="margin: 20px 10px 0px 10px;">
+                                                        <a style="text-decoration: none;" href="#">
+                                                                <button style="width:6cm;border-radius: 10px;" class="btn btn-primary" type=button value=" Is interested">
+                                                                        <span class="fa fa-star"></span> Is interested
+                                                                </button>
+                                                        </a>
+                                                      </div>
+                                                      <hr style="border:2px solid lightgray;margin-left: 20px;margin-right: 20px;margin-top: 10px;"/>
+                                                      <div style="margin: 10px 10px 0px 10px;">
+                                                        <div style="display: flex;justify-content:space-between">
+                                                                <h6 style="font-weight: bold;color:dodgerblue;">Friend Requests</h6>
+                                                                <p>
+                                                                        <a id="favored" class="duck" href="#" style="text-decoration: none;font-weight:bold;font-size:13px;margin-right: 5px;">see all</a>
+                                                                </p>
+                                                        </div>
+                                                        <div style="display: flex;">
+                                                                <span style="width: 1cm;height: 1cm;border-radius: 50%;z-index: 1;margin-left: 5px;" class="card">
+                                                                         <img id="face" src="https://i.pinimg.com/originals/44/2d/d5/442dd57fcfdfaa7b36716acf9f92f948.jpg" style="width:1cm;height: 1cm;border-radius: 50%;"/>
+                                                                </span>
+                                                                <span style="margin-left: 15px;display: grid;">
+                                                                <span>
+                                                                         <span style="font-weight:bold;font-size:13px;" id="">
+                                                                                  <a id="trp" href="#" class="lime">Armanul islam</a>
+                                                                         </span>
+                                                                </span>
+                                                                         <p class="duck" style="font-size: 10px;" id="polish">Lorem ipsum dolor sit amet</p>
+                                                                </span>
+                                                       </div>
+                                                       <div style="margin-left: 30px;display: flex;margin-bottom: 40px;">
+                                                        <a style="text-decoration: none;margin-left: 20px;">
+                                                                <input style="width:2cm;border-radius: 5px;font-size: 10px;" class="btn btn-primary" type=button value="Confirm"/>
+                                                        </a>
+                                                        <a style="text-decoration: none;margin-left: 5px;">
+                                                                <input style="width:2cm;border-radius: 5px;font-size: 10px;background-color: aliceblue;" class="btn" type=button value="Remove"/>
+                                                        </a>
+                                                      </div>
+                                                      </div>
+                                             </div>
+                                             <div id="leopard" style="margin-top: 20px;" class="differentnesteddiv fourthdivision">
+                                                <div style="display: flex;justify-content: space-between;margin: 15px 15px;">
+                                                        <span style="display: flex;">
+                                                                <i style="color: white;background-color:dodgerblue;width:0.7cm;height:0.7cm;border-radius:10px;padding: 7px;" class="fa fa-plus"></i>
+                                                                <p id="ing" style="font-weight: bold;font-size:13px;margin-left: 3px;"><a id="strick" class="lime" href="#">Create Page & Group</a></p>
+                                                        </span>
+                                                        <span>
+                                                                <a onclick="fastest()" id="favie" href="#"><i class="fa fa-search"></i></a>
+                                                        </span>
+                                                </div>
+                                                <div style="margin: 15px 10px;">
+                                                        <img style="width: 5.9cm;height:5cm;border-radius:10px;" src="https://wallpapertag.com/wallpaper/full/b/3/0/479723-widescreen-moana-wallpapers-1920x1110-for-iphone-5s.jpg"/>
+                                                </div>
+                                                <div>
+                                                        <span style="margin-left: 15px;display: grid;">
+                                                                <span style="display:flex;justify-content: space-between;">
+                                                                         <span style="font-weight:bold;font-size:10px;" id="">
+                                                                                  <a id="newline" href="#" class="lime">Simple group or page name</a>
+                                                                         </span>
+                                                                         <span style="margin-right: 5px;">
+                                                                                <a href="#"><input style="width:2cm;border-radius: 15px;font-size: 10px;" class="btn btn-primary" type=button value="Join Group"/></a>
+                                                                         </span>
+                                                                </span>
+                                                                         <p class="duck" style="font-size: 10px;padding-bottom: 30px;" id="duck">200k Members</p>
+                                                        </span>
+                                                </div>
+                                             </div>
+                                             <div id="cheetah" style="margin-top: 20px;" class="nesteddiv fourthdivision">
+                                                <div style="display: flex;justify-content: space-between;margin: 15px 15px;">
+                                                        <span style="display: flex;">
+                                                                <i style="color: white;background-color:dodgerblue;width:0.7cm;height:0.7cm;border-radius:10px;padding: 3px 0px 0px 5px;margin-top: 5px;font-size: 20px;" class="fa fa-user"></i>
+                                                                <p style="font-weight: bold;font-size:13px;margin-left: 3px;margin-top: 5px;"><a class="colorni" id="color12" href="#">Message</a></p>
+                                                        </span> 
+                                                        <span>
+                                                                <form style="display: flex;" action="" method="get">
+                                                                         <input id="loud" style="width: 2.5cm;height: 0.7cm;border-radius: 30px 0px 0px 30px;border: hidden;padding-left: 5px;font-size: 10px;" class="shadow lao" type="text" placeholder="Search"/>
+                                                                         <button id="loud2" style="margin-left: -5px;border: hidden;border-radius: 0px 30px 30px 0px;height: 0.7cm;border-left: transparent;" class="shadow lao" onclick="">
+                                                                                  <i id="smh" class="fa fa-search"></i>
+                                                                         </button>
+                                                                </form>
+                                                       </span>
+                                                </div>
+                                                <div style="display: grid;margin:20px 10px 10px 10px;gap:5px;">
+                                                        <span id="money" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2018/08/26000422/FC.817-Large-TIFF_4000-pixels-long.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color" class="lime" href="#">Zonayed Hussein</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money2" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://media.istockphoto.com/photos/portrait-of-man-picture-id502486230?k=6&m=502486230&s=170667a&w=0&h=2FTKZJmmKzaM8PwHYJ5_Gk9Pw5jV51vwmjwzfjHsvLA=" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color2" href="#" class="lime">Wayne Alfred</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: gold;margin-right: 2px;" class="fa fa-circle"></i>Offline</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money3" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://www.edwardshaw.co.uk/wp-content/uploads/2012/03/dramatic-photo-birmingham-studio-portrait-14365sm.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color3" href="#" class="lime">James William</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money4" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://i.pinimg.com/originals/eb/c9/64/ebc964b28a2173c0945fa441f31bb5d1.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color4" href="#" class="lime">Deborah Owolabi</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money5" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://jixipix.com/portrait-painter/images/01-full.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color5" href="#" class="lime">Abraham Micheal</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: gold;margin-right: 2px;" class="fa fa-circle"></i>Offline</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money6" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://pelucha.com/wp-content/uploads/sites/2/2017/03/business-portrait-prague-010.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color6" href="#" class="lime">Donald Collins</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: gold;margin-right: 2px;" class="fa fa-circle"></i>Offline</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money7" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://i.pinimg.com/originals/81/d4/d1/81d4d1e821bdeb5295e2c2e5c63a3497.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color7" href="#" class="lime">Flora Dwayne</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money8" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://3.bp.blogspot.com/-GX691eDA2gs/WHJaE0tBjXI/AAAAAAAArN0/Ai8kbYFTL1Eyc5czN3F6QAuIHMkhtE1xwCLcB/s1600/15803449_230709814023545_7693041624120557568_n.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color8" href="#" class="lime">Abayomi Akanji</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money9" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://p0.pikist.com/photos/275/936/nigerian-africa-man-black-adult-afro-handsome-yoruba-portrait.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color9" href="#" class="lime">Taofeeq Ismail</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: gold;margin-right: 2px;" class="fa fa-circle"></i>Offline</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money10" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://i.pinimg.com/originals/27/91/9a/27919a9ad6b8593081cfb1b5ae1206ab.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color10" href="#" class="lime">Yetunde Akanni</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                        <span id="money11" class="shadow binge twodynamite">
+                                                                <span style="margin-left: 7px;display:flex;justify-content: space-between;">
+                                                                        <span style="display: flex;margin: 10px;">
+                                                                                <img id="facetag" src="https://4.bp.blogspot.com/---_Fk-bwvdA/U--aoFwqn1I/AAAAAAAALW0/OipZzBWfeVc/s1600/PNW_0878-3440517273-O.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;"/>
+                                                                                 <span style="font-weight:bold;font-size:10px;margin-left: 5px;" id="">
+                                                                                          <a id="color11" href="#" class="lime">Omotolani Aina</a><br/>
+                                                                                          <p style="font-size: 7px;color:gray"><i id="" style="color: rgb(54, 173, 54);margin-right: 2px;" class="fa fa-circle"></i>Online</p>
+                                                                                 </span>
+                                                                        </span>
+                                                                        <span>
+                                                                                 <img src="https://iphone-image.apkpure.com/v2/app/3/c/7/3c7a867548707bd21a325b8075a3c8d3.jpg" style="width:0.5cm;height: 0.5cm;border-radius: 50%;margin-top: 3px;margin-right: 5px;" id=""/>
+                                                                        </span>
+                                                                </span>
+                                                        </span>
+                                                </div>
+                                             </div>
+                                             <!--End Embodiment-->
+                                    </div>
+                           </div>
+                           <!--End Embodiment-->
+                  </section>
+                  <script>
+                        //Change Images of your Choice
+                            function changeImage(){
+                                    var reader= new FileReader();
+                                    var file=document.getElementById('img1').files[0];
+                                    reader.onload=function(e){
+                                             document.getElementById('reflect').src=e.target.result;
+                                             document.getElementById('dimension').src=e.target.result;
+                                             document.getElementById('face').src=e.target.result;
+                                    }
+                                    reader.readAsDataURL(file)
+                           }
+                           //Blue Mode
+                           function changeColor(){
+                                document.getElementById("darkmode").classList.toggle("black");
+                                document.getElementById("darkmode").style.transition="1s";
+                                document.getElementById("dark").classList.toggle("blac");
+                                document.getElementById("dark").style.transition="1s";
+                                document.getElementById("berry").classList.toggle("blac");
+                                document.getElementById("berry").style.transition="1s";
+                                document.getElementById("jane").classList.toggle("blac");
+                                document.getElementById("jane").style.transition="1s";
+                                document.getElementById("magma").classList.toggle("blac");
+                                document.getElementById("magma").style.transition="1s";
+                                document.getElementById("town").classList.toggle("blac");
+                                document.getElementById("town").style.transition="1s";
+                                document.querySelector("#foster").classList.toggle("blac");
+                                document.querySelector("#foster").style.transition="1s";
+                                document.querySelector("#leopard").classList.toggle("blac");
+                                document.querySelector("#leopard").style.transition="1s";
+                                document.querySelector("#cheetah").classList.toggle("blac");
+                                document.querySelector("#cheetah").style.transition="1s";
+                                document.querySelector("#changed").classList.toggle("whitney");
+                                document.querySelector("#changed").style.transition="1s";
+                                document.querySelector("#pages").classList.toggle("whitney");
+                                document.querySelector("#pages").style.transition="1s";
+                                document.querySelector("#messenger").classList.toggle("whitney");
+                                document.querySelector("#messenger").style.transition="1s";
+                                document.querySelector("#instagram").classList.toggle("whitney");
+                                document.querySelector("#instagram").style.transition="1s";
+                                document.getElementById("search").classList.toggle("kiss");
+                                document.getElementById("search").style.transition="1s";
+                                document.getElementById("search").classList.toggle("whitney");
+                                document.getElementById("sech").classList.toggle("kiss");
+                                document.getElementById("sech").style.transition="1s";
+                                document.querySelector("#dat").classList.toggle("prague");
+                                document.querySelector("#dat").style.transition="1s";
+                                document.querySelector("#dat").classList.toggle("whitney");
+                                document.querySelector("#dat").style.transition="1s";
+                                document.getElementById("elem").classList.toggle("blac");
+                                document.getElementById("elem").style.transition="1s";
+                                document.getElementById("elem2").classList.toggle("blac");
+                                document.getElementById("elem2").style.transition="1s";
+                                document.getElementById("elem3").classList.toggle("blac");
+                                document.getElementById("elem3").style.transition="1s";
+                                document.getElementById("hi").classList.toggle("blac");
+                                document.getElementById("hi").style.transition="1s";
+                                document.getElementById("hi2").classList.toggle("blac");
+                                document.getElementById("hi2").style.transition="1s";
+                                document.getElementById("hi3").classList.toggle("blac");
+                                document.getElementById("hi3").style.transition="1s";
+                                document.querySelector("#pa").classList.toggle("whitney");
+                                document.querySelector("#pa").style.transition="1s";
+                                document.querySelector("#pa2").classList.toggle("whitney");
+                                document.querySelector("#pa2").style.transition="1s";
+                                document.querySelector("#pa3").classList.toggle("whitney");
+                                document.querySelector("#pa3").style.transition="1s";
+                                document.querySelector("#pa4").classList.toggle("whitney");
+                                document.querySelector("#pa4").style.transition="1s";
+                                document.querySelector("#pa5").classList.toggle("whitney");
+                                document.querySelector("#pa5").style.transition="1s";
+                                document.getElementById("over").classList.toggle("kiss");
+                                document.getElementById("over").style.transition="1s";
+                                document.getElementById("over").classList.toggle("try");
+                                document.getElementById("over").style.transition="1s";
+                                document.querySelector("#money").classList.toggle("kiss");
+                                document.querySelector("#money").style.transition="1s";
+                                document.querySelector("#money").classList.toggle("twodynamite");
+                                document.querySelector("#money").style.transition="1s";
+                                document.querySelector("#money2").classList.toggle("kiss");
+                                document.querySelector("#money2").style.transition="1s";
+                                document.querySelector("#money2").classList.toggle("twodynamite");
+                                document.querySelector("#money2").style.transition="1s";
+                                document.querySelector("#money3").classList.toggle("kiss");
+                                document.querySelector("#money3").style.transition="1s";
+                                document.querySelector("#money3").classList.toggle("twodynamite");
+                                document.querySelector("#money3").style.transition="1s";
+                                document.querySelector("#money4").classList.toggle("kiss");
+                                document.querySelector("#money4").style.transition="1s";
+                                document.querySelector("#money4").classList.toggle("twodynamite");
+                                document.querySelector("#money4").style.transition="1s";
+                                document.querySelector("#money5").classList.toggle("kiss");
+                                document.querySelector("#money5").style.transition="1s";
+                                document.querySelector("#money5").classList.toggle("twodynamite");
+                                document.querySelector("#money5").style.transition="1s";
+                                document.querySelector("#money6").classList.toggle("kiss");
+                                document.querySelector("#money6").style.transition="1s";
+                                document.querySelector("#money6").classList.toggle("twodynamite");
+                                document.querySelector("#money6").style.transition="1s";
+                                document.querySelector("#money7").classList.toggle("kiss");
+                                document.querySelector("#money7").style.transition="1s";
+                                document.querySelector("#money7").classList.toggle("twodynamite");
+                                document.querySelector("#money7").style.transition="1s";
+                                document.querySelector("#money8").classList.toggle("kiss");
+                                document.querySelector("#money8").style.transition="1s";
+                                document.querySelector("#money8").classList.toggle("twodynamite");
+                                document.querySelector("#money8").style.transition="1s";
+                                document.querySelector("#money9").classList.toggle("kiss");
+                                document.querySelector("#money9").style.transition="1s";
+                                document.querySelector("#money9").classList.toggle("twodynamite");
+                                document.querySelector("#money9").style.transition="1s";
+                                document.querySelector("#money10").classList.toggle("kiss");
+                                document.querySelector("#money10").style.transition="1s";
+                                document.querySelector("#money10").classList.toggle("twodynamite");
+                                document.querySelector("#money10").style.transition="1s";
+                                document.querySelector("#money11").classList.toggle("kiss");
+                                document.querySelector("#money11").style.transition="1s";
+                                document.querySelector("#money11").classList.toggle("twodynamite");
+                                document.querySelector("#money11").style.transition="1s";
+                                document.querySelector("#color").classList.toggle("whitney");
+                                document.querySelector("#color").style.transition="1s";
+                                document.querySelector("#color2").classList.toggle("whitney");
+                                document.querySelector("#color2").style.transition="1s";
+                                document.querySelector("#color3").classList.toggle("whitney");
+                                document.querySelector("#color3").style.transition="1s";
+                                document.querySelector("#color4").classList.toggle("whitney");
+                                document.querySelector("#color4").style.transition="1s";
+                                document.querySelector("#color5").classList.toggle("whitney");
+                                document.querySelector("#color5").style.transition="1s";
+                                document.querySelector("#color6").classList.toggle("whitney");
+                                document.querySelector("#color6").style.transition="1s";
+                                document.querySelector("#color7").classList.toggle("whitney");
+                                document.querySelector("#color7").style.transition="1s";
+                                document.querySelector("#color8").classList.toggle("whitney");
+                                document.querySelector("#color8").style.transition="1s";
+                                document.querySelector("#color9").classList.toggle("whitney");
+                                document.querySelector("#color9").style.transition="1s";
+                                document.querySelector("#color10").classList.toggle("whitney");
+                                document.querySelector("#color10").style.transition="1s";
+                                document.querySelector("#color11").classList.toggle("whitney");
+                                document.querySelector("#color11").style.transition="1s";
+                                document.querySelector("#color12").classList.toggle("whitney");
+                                document.querySelector("#color12").style.transition="1s";
+                                document.querySelector("#color12").classList.toggle("colorni");
+                                document.querySelector("#color12").style.transition="1s";
+                                document.getElementById("loud").classList.toggle("kiss");
+                                document.getElementById("loud").style.transition="1s";
+                                document.getElementById("loud").classList.toggle("lao");
+                                document.getElementById("loud2").classList.toggle("kiss");
+                                document.getElementById("loud2").style.transition="1s";
+                                document.getElementById("loud2").classList.toggle("lao");
+                                document.getElementById("smh").classList.toggle("whitney");
+                                document.getElementById("smh").style.transition="1s";
+                                document.getElementById("newline").classList.toggle("lime");
+                                document.getElementById("newline").classList.toggle("whitney");
+                                document.getElementById("newline").style.transition="1s";
+                                document.getElementById("duck").classList.toggle("duck");
+                                document.getElementById("duck").classList.toggle("whitney");
+                                document.getElementById("strick").classList.toggle("lime");
+                                document.getElementById("strick").classList.toggle("whitney");
+                                document.getElementById("strick").style.transition="1s";
+                                document.getElementById("trp").classList.toggle("lime");
+                                document.getElementById("trp").classList.toggle("whitney");
+                                document.getElementById("trp").style.transition="1s";
+                                document.getElementById("polish").classList.toggle("duck");
+                                document.getElementById("polish").classList.toggle("whitney");
+                                document.getElementById("polish").style.transition="1s";
+                                document.getElementById("favor").classList.toggle("duck");
+                                document.getElementById("favor").classList.toggle("whitney");
+                                document.getElementById("favor").style.transition="1s";
+                                document.getElementById("favored").classList.toggle("duck");
+                                document.getElementById("favored").classList.toggle("whitney");
+                                document.getElementById("favored").style.transition="1s";
+                                document.getElementById("end").classList.toggle("blac");
+                                document.getElementById("end").style.transition="1s";
+                                document.getElementById("date").classList.toggle("whitney");
+                                document.getElementById("date").style.transition="1s";
+                                document.getElementById("america").classList.toggle("whitney");
+                                document.getElementById("america").style.transition="1s";
+                                document.getElementById("month").classList.toggle("whitney");
+                                document.getElementById("month").style.transition="1s";
+                                document.getElementById("york").classList.toggle("duck");
+                                document.getElementById("york").classList.toggle("whitney");
+                                document.getElementById("york").style.transition="1s";
+                                document.getElementById("popular").classList.toggle("colorni");
+                                document.getElementById("popular").classList.toggle("whitney");
+                                document.getElementById("popular").style.transition="1s";
+                                document.getElementById("ahmad").classList.toggle("colorni");
+                                document.getElementById("ahmad").classList.toggle("whitney");
+                                document.getElementById("ahmad").style.transition="1s";
+                                document.getElementById("air").classList.toggle("duck");
+                                document.getElementById("air").classList.toggle("whitney");
+                                document.getElementById("air").style.transition="1s";
+                                document.getElementById("water").classList.toggle("duck");
+                                document.getElementById("water").classList.toggle("whitney");
+                                document.getElementById("water").style.transition="1s";
+                                document.getElementById("fire").classList.toggle("duck");
+                                document.getElementById("fire").classList.toggle("whitney");
+                                document.getElementById("fire").style.transition="1s";
+                                document.getElementById("set").classList.toggle("duck");
+                                document.getElementById("set").classList.toggle("whitney");
+                                document.getElementById("set").style.transition="1s";
+                                document.getElementById("earth").classList.toggle("duck");
+                                document.getElementById("earth").classList.toggle("whitney");
+                                document.getElementById("earth").style.transition="1s";
+                                document.getElementById("in").classList.toggle("kiss");
+                                document.getElementById("in").style.transition="1s";
+                                document.getElementById("in").classList.toggle("try");
+                                document.getElementById("in").style.transition="1s";
+                                document.getElementById("in").classList.toggle("whitney");
+                                document.getElementById("in").style.transition="1s";
+
+                           }
+                           //increase height
+                           function increaseHeight(){
+                                var elem=document.getElementById("elem");
+                                elem.style.height="400px";
+                                elem.style.transition="1s";
+                                document.getElementById("getme").style.display="block";
+                                var mas=document.getElementById("pelem").innerHTML="";
+                                document.getElementById("hi").style.display="block"
+                           }
+                           //increase second height
+                           function increaseHeight2(){
+                                var elem=document.getElementById("elem2");
+                                elem.style.height="400px";
+                                elem.style.transition="1s";
+                                document.getElementById("getme2").style.display="block";
+                                var mas=document.getElementById("pelem2").innerHTML="";
+                                document.getElementById("hi2").style.display="block"
+                           }
+                           //increase third height
+                           function increaseHeight3(){
+                                var elem=document.getElementById("elem3");
+                                elem.style.height="400px";
+                                elem.style.transition="1s";
+                                document.getElementById("getme3").style.display="block";
+                                var mas=document.getElementById("pelem3").innerHTML="";
+                                document.getElementById("hi3").style.display="block"
+                           }
+                           //decrease height
+                           function decreaseHeight(){
+                                var elem=document.getElementById("elem");
+                                elem.style.height="1cm";
+                                elem.style.transition="1s";
+                                document.getElementById("getme").style.display="none";
+                                var mas=document.getElementById("pelem").innerHTML="See More";
+                                var getAnotherId=document.getElementById("hi");
+                                getAnotherId.style.display="none"
+                           }
+                           //decrease second height
+                           function decreaseHeight2(){
+                                var elem=document.getElementById("elem2");
+                                elem.style.height="1cm";
+                                elem.style.transition="1s";
+                                document.getElementById("getme2").style.display="none";
+                                var mas=document.getElementById("pelem2").innerHTML="See More";
+                                var getAnotherId=document.getElementById("hi2");
+                                getAnotherId.style.display="none"
+                           }
+                           //decrease third height
+                           function decreaseHeight3(){
+                                var elem=document.getElementById("elem3");
+                                elem.style.height="1cm";
+                                elem.style.transition="1s";
+                                document.getElementById("getme3").style.display="none";
+                                var mas=document.getElementById("pelem3").innerHTML="See More";
+                                var getAnotherId=document.getElementById("hi3");
+                                getAnotherId.style.display="none"
+                           }
+                           //Change name
+                           function manipulate(){
+                                var idule=window.prompt("Please, fill in your name. A single name is fine.");
+                                var attract=document.getElementById("changed").innerHTML=idule;
+                                if(idule===""){
+                                        alert("You have not filled in a name");
+                                        document.getElementById("changed").innerHTML="";
+                                }
+                           }
+                        //like the post
+                        var counter=22;
+                        var add=function (deal){
+                                counter+=deal;
+                                if(counter>22){
+                                        counter=23
+                                        document.getElementById("set").innerHTML=counter+" Likes";
+                                        alert("You liked this post");
+                                }
+                        }
+                        //unlike the post
+                        var counter=22;
+                        var subtract=function (deal){
+                                counter-=deal;
+                                if(counter>22){
+                                        counter=22
+                                        document.getElementById("set").innerHTML=counter+" Likes";
+                                        alert("You Unliked this post");
+                                }
+                        }
+                        //Comment what's on your mind
+                        function comment(){
+                                var comment=window.prompt("What do you have to comment?");
+                                var commentSection=document.getElementById("in").innerHTML="You Comment: "+comment;
+                                document.getElementById("in").style.display="block";
+                        }
+                        setTimeout(function(){
+                                alert("Enjoy the Exclusive Facebook clone created by hussein, Change profile pic of your choice through the folder, you can input your name, like or unlike post, add a comment and access the blue mode. Contact me on my whatsapp no 08064116181")},3000)
+                        var dat= new Date();
+                        //Precise Months
+                        var dayy=dat.getDate()
+                        document.getElementById("date").innerHTML=dayy;
+                        //Precise Months
+                        var monthh= dat.getMonth();
+                        if(monthh===0){
+                                document.getElementById("month").innerHTML="Jan";
+                        }
+                        else if(monthh===1){
+                                document.getElementById("month").innerHTML="Feburary";
+                        }
+                        else if(monthh===2){
+                                document.getElementById("month").innerHTML="March";
+                        }
+                        else if(monthh===3){
+                                document.getElementById("month").innerHTML="April";
+                        }
+                        else if(monthh===4){
+                                document.getElementById("month").innerHTML="May";
+                        }
+                        else if(monthh===5){
+                                document.getElementById("month").innerHTML="June";
+                        }
+                        else if(monthh===6){
+                                document.getElementById("month").innerHTML="July";
+                        }
+                        else if(monthh===7){
+                                document.getElementById("month").innerHTML="August";
+                        }
+                        else if(monthh===8){
+                                document.getElementById("month").innerHTML="September";
+                        }
+                        else if(monthh===9){
+                                document.getElementById("month").innerHTML="October";
+                        }
+                        else if(monthh===10){
+                                document.getElementById("month").innerHTML="November";
+                        }
+                        else if(monthh===11){
+                                document.getElementById("month").innerHTML="December";
+                        }
+                        var location=navigator.geolocation.getCurrentPosition()
+                        document.write("<br/>"+location)
+                  </script>
+         </body>
+</html>
