@@ -1,0 +1,134 @@
+body{
+    display: grid;
+    place-content: center;
+    transition: 1s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    width:400px;
+    height: 900px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.expsec{
+    width:70px;
+    height: 900px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/*three dot circles*/
+section>span{
+    display: flex;
+    width: 300px;
+    padding: 10px;
+    justify-content: space-between;
+}
+section>span>i.red{
+    color:red;
+    filter: contrast(50%);
+    transition: 1s;
+}
+section>span>i.yellow{
+    color:orange;
+    filter: contrast(50%);
+    transition: 1s;
+}
+section>span>i.green{
+    color:limegreen;
+    filter: contrast(50%);
+    transition: 1s;
+}
+section>span>form{
+    width: 370px;
+    height: 40px;
+    background-color: rgb(235, 232, 232);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    transition: 1s;
+}
+.fordid{
+    width: 50px;
+}
+section>span>form>input{
+    width: 500px;
+    height: 40px;
+    background-color: rgb(235, 232, 232);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    border-left: transparent;
+    margin-top: -1px;
+    /*visibility js*/
+}
+section>div>p{
+    color: grey;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+section>div>div{
+    display: grid;
+    flex-direction: column;
+    align-content: space-between;
+    overflow: hidden;
+}
+section>div>div>span>span>i{
+    padding: 10px 20px;
+    font-size: 15px;
+    height: 50px;
+}
+section>div>div>span>span>i:hover{
+    padding: 10px 20px;
+    font-size: 15px;
+    height: 50px;
+}
+section>div>div>span{
+    font-size: 17px;
+    transition: 1s;
+    cursor: pointer;
+}
+section>div>div>span:hover{
+    color: white;
+    height: 50px;
+    background-color: dodgerblue
+}
+.expand{
+    background-color: dodgerblue;color: white;
+    border-radius: 50%;width: 1cm;height: 1cm;
+    font-weight: bold;padding-left: 13px;padding-top: 10px;
+    cursor: pointer;
+    position:fixed;
+    margin-left: 330px;
+    transition: 1s;
+    transform: rotate(-90deg);
+    font-size: 20px;
+}
+.rightangle{
+    transform: rotate(90deg);
+}
+.hifi{
+    margin-left: -330px;
+    transition: 1s;
+}
+.searchVisibility{
+    visibility: hidden;
+    transition: 1s;
+}
+.notify{
+    background-color: red;color:white;
+    width: 1cm;height:0.7cm;padding: 3px 13px;
+    border-radius: 10px;margin-top: 10px;margin-right: 10px;
+}
+.allNew{
+    width: 360px;height: 70px;
+    margin: 10px 20px;border-radius: 20px;
+    transition: 1s;
+    display: flex;flex-direction: row;background-color: lightgrey;
+}
+.allReduce{
+    width: 55px;
+    margin: 10px 5px;
+}
